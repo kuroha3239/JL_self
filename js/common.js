@@ -139,14 +139,17 @@ $(function() {
     }
 
     // -------------------加上footer bottom-------------------//
-    if (scroll_act + $(window).height() + 1 > $('.wrapper').outerHeight()) {
-      setTimeout(function() {
-        $('body').addClass('footer_down');
-        $('.footer_bottom').show(500);
-      }, 500);
-    } else {
-      $('body').removeClass('footer_down');
-      $('.footer_bottom').fadeOut(1000);
+    var window_width = $(window).width();
+    if (window_width <= 1280) {
+      if (scroll_act + $(window).height() + 1 > $('.wrapper').outerHeight()) {
+        setTimeout(function() {
+          $('body').addClass('footer_down');
+          $('.footer_bottom').show(500);
+        }, 500);
+      } else {
+        $('body').removeClass('footer_down');
+        $('.footer_bottom').fadeOut(1000);
+      }
     }
   });
 
@@ -284,10 +287,10 @@ $(function() {
   // =====================================RWD=====================================//
 
   var window_width = $(window).width();
-  // ------------------- AOS 調整-------------------//
-
-  // if (window_width <= 767) {
   if (window_width <= 1280) {
+    // ------------------- AOS 調整-------------------//
+    // if (window_width <= 767) {
+
     AOS.init({
       duration: 500,
     });

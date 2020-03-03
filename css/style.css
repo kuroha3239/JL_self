@@ -986,6 +986,9 @@ nav>ul>li>a:before {
 .skill_chart {
   width: 45%;
   margin: 1% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .bar-chart {
@@ -994,9 +997,6 @@ nav>ul>li>a:before {
   height: 1.3rem;
   margin-bottom: 1.3rem;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 .bar-chart .bar-chart--inner {
