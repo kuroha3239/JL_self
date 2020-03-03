@@ -18,6 +18,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* -------------------------全域------------------------- */
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "RBNo2Light", "微軟正黑體", "Microsoft JhengHei", sans-serif;
   overflow-x: hidden;
@@ -77,6 +81,10 @@ button {
   padding-bottom: 40%;
   padding-top: 50px;
   background-attachment: fixed;
+}
+
+.main_bg_click {
+  background-image: url("../images/bg/top_bgc.jpg");
 }
 
 h1 {
@@ -1200,7 +1208,7 @@ nav>ul>li>a:before {
     font-size: 1.3rem;
   }
   nav {
-    bottom: 1%;
+    bottom: 0%;
     top: auto;
   }
   /* -------------section_1區 (focus)----------- */

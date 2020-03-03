@@ -19,7 +19,7 @@ $(function() {
     $('#main_bg').addClass('shine');
 
     setTimeout(function() {
-      $('#main_bg').css('background-image', 'url(images/bg/top_bgc.jpg)');
+      $('#main_bg').addClass('main_bg_click');
       $('h4').text('用一張張的照片，紀錄下我的生活');
     }, 150);
 
