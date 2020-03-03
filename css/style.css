@@ -1154,7 +1154,7 @@ nav>ul>li>a:before {
   }
   /* ------------------ sup_bg ---------------- */
   .bg_sup_1 {
-    top: 13%;
+    top: 55%;
   }
   .bg_sup_2 {
     bottom: -250px;
@@ -1197,7 +1197,7 @@ nav>ul>li>a:before {
     font-size: 1.3rem;
   }
   nav {
-    bottom: 0;
+    bottom: 1%;
     top: auto;
   }
   /* -------------section_1區 (focus)----------- */
