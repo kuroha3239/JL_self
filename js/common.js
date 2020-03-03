@@ -179,13 +179,6 @@ $(function() {
     }, 1500);
   });
 
-  // $('#top_click').click(function () {
-  //   setTimeout(function () {
-  //     $('html,body').animate({ scrollTop: $('#about').offset().top }, 1200);
-  //   }, 2500);
-
-  // });
-
   // fliter的click
   $('.select_btn button').hover(function() {
     // $(".point img").css("display", "none");
@@ -308,6 +301,11 @@ $(function() {
       // 'data-aos-offset': '800',
       // 'data-aos-anchor-placement': 'bottom-bottom',
       // 'data-aos-delay': '0',
+    });
+    $('#final_click').attr({
+      'data-aos': '',
+      'data-aos-offset': '1000',
+      'data-aos-anchor-placement': 'top-bottom',
     });
     AOS.refresh();
   }
