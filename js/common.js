@@ -281,6 +281,36 @@ $(function() {
     duration: 800,
   });
 
+  // =====================================RWD=====================================//
+
+  var window_width = $(window).width();
+  // ------------------- AOS 調整-------------------//
+
+  // if (window_width <= 767) {
+  if (window_width <= 1280) {
+    $('nav').attr({
+      // 'data-aos-anchor': '#top_news_point',
+      // 'data-aos-offset': '800',
+      'data-aos-anchor-placement': 'top-bottom',
+    });
+    // $('#sec_news div').attr({
+    //   'data-aos-anchor': '#top_news_point',
+    //   'data-aos-offset': '800',
+    //   'data-aos-anchor-placement': 'bottom-bottom',
+    //   'data-aos-delay': '1000',
+    // });
+    // $('.top_case figure').attr({
+    //   'data-aos-offset': '100',
+    //   'data-aos-anchor-placement': 'bottom-bottom',
+    //   'data-aos-delay': '0',
+    // });
+    // $('.top_recruit div').attr({
+    //   'data-aos-offset': '-150',
+    //   'data-aos-delay': '0',
+    // });
+    AOS.refresh();
+  }
+
   // -------------------SP NAV-------------------//
   $(document).ready(function() {
     $('.nav_btn a').click(function() {

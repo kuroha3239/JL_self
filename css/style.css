@@ -1151,14 +1151,15 @@ nav>ul>li>a:before {
   }
   /* ------------------ sup_bg ---------------- */
   .bg_sup_2 {
-    bottom: -175px;
+    bottom: -250px;
+    width: 25%;
   }
   .bg_sup_3 {
     width: 90%;
   }
   /* ------------------ TOP區 ---------------- */
   .top {
-    height: 700px;
+    height: 100%;
   }
   .bg_sup_1 {
     top: 3%;
@@ -1166,59 +1167,63 @@ nav>ul>li>a:before {
   #main_bg {
     /* background-position: bottom 21px right -45px; */
     background-position: center bottom;
-    padding-top: 50px;
+    padding-top: 10%;
+    padding-bottom: 86%;
     background-attachment: inherit;
   }
   #top_click {
-    bottom: 12%;
+    bottom: 8%;
   }
   h1 {
     font-size: 8rem;
-    margin-top: 0;
+    margin-top: 17%;
+    padding-top: 0%;
   }
   h2 {
     font-size: 3.5rem;
   }
   h4 {
-    font-size: 1.2rem;
-  }
-  #zone_1_bg {
-    background-attachment: inherit;
+    font-size: 1.3rem;
   }
   nav {
-    bottom: 52%;
+    /* bottom: 52%; */
     /* display: none; */
   }
   /* -------------section_1區 (focus)----------- */
   .zone_1 {
-    height: 600px;
+    height: 100%;
   }
   #zone_1_bg {
-    padding-top: 10%;
+    padding-top: 15%;
+    padding-bottom: 108%;
+    background-attachment: inherit;
   }
   #focus_click {
-    top: 41%;
-    right: 21%;
-    width: 360px;
+    top: 27%;
+    right: 25%;
+    width: 370px;
   }
   #focus_click p {
     font-size: 0.9rem;
     color: #000000;
-    padding: px;
+    padding: 10px;
     background: #ffffff59;
     border-radius: 10px;
   }
+  #focus_click.click_down:before, #focus_click.click_down:after {
+    border: 0 solid #00ff4c;
+  }
   /* -------------section_2區 (photo)----------- */
-  #zone_1_bg {
-    padding-top: 10%;
+  #zone_2_bg {
+    padding-top: 15%;
   }
   /* -------------section_3區 (graphic)----------- */
-  #zone_2_bg {
-    padding-top: 10%;
+  #zone_3_bg {
+    padding-top: 15%;
   }
   /* -------------section_4區 (web)----------- */
-  #zone_3_bg {
-    padding-top: 10%;
+  #zone_4_bg {
+    padding-top: 15%;
   }
   .content {
     width: 30%;
