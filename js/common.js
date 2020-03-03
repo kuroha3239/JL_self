@@ -299,10 +299,10 @@ $(function() {
       // 'data-aos-delay': '0',
     });
     $('h3').attr({
-      'data-aos-anchor': '#footer',
-      'data-aos-offset': '800',
+      'data-aos': '',
+      // 'data-aos-offset': '800',
       // 'data-aos-anchor-placement': 'bottom-bottom',
-      'data-aos-delay': '0',
+      // 'data-aos-delay': '0',
     });
     // $('.top_recruit div').attr({
     //   'data-aos-offset': '-150',
