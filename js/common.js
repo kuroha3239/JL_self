@@ -289,21 +289,21 @@ $(function() {
   // if (window_width <= 767) {
   if (window_width <= 1280) {
     $('nav').attr({
-      // 'data-aos-anchor': '#top',
-      // 'data-aos-offset': '800',
+      'data-aos-anchor': '#top',
+      'data-aos-offset': '800',
       'data-aos-anchor-placement': 'top-bottom',
+    });
+    $('#top_click span').attr({
+      // 'data-aos-offset': '100',
+      'data-aos-anchor-placement': 'top-bottom',
+      // 'data-aos-delay': '0',
     });
     $('h3').attr({
       'data-aos-anchor': '#footer',
       'data-aos-offset': '800',
-      //   'data-aos-anchor-placement': 'bottom-bottom',
-      //   'data-aos-delay': '1000',
+      // 'data-aos-anchor-placement': 'bottom-bottom',
+      'data-aos-delay': '0',
     });
-    // $('.top_case figure').attr({
-    //   'data-aos-offset': '100',
-    //   'data-aos-anchor-placement': 'bottom-bottom',
-    //   'data-aos-delay': '0',
-    // });
     // $('.top_recruit div').attr({
     //   'data-aos-offset': '-150',
     //   'data-aos-delay': '0',

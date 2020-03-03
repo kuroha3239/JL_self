@@ -1162,12 +1162,12 @@ nav>ul>li>a:before {
     height: 100%;
   }
   .bg_sup_1 {
-    top: 14.78%;
+    top: 11.5%;
   }
   #main_bg {
     /* background-position: bottom 21px right -45px; */
     background-position: center bottom;
-    padding-top: 10%;
+    padding-top: 4%;
     padding-bottom: 86%;
     background-attachment: inherit;
   }
@@ -1184,38 +1184,40 @@ nav>ul>li>a:before {
     padding-top: 0%;
   }
   h2 {
-    font-size: 3.5rem;
+    font-size: 5rem;
+    margin-top: 15%;
+    width: 40%;
   }
   h4 {
     font-size: 1.3rem;
   }
   nav {
     bottom: 0;
-    top: 23.6%;
+    top: 20%;
   }
   /* -------------section_1區 (focus)----------- */
   .zone_1 {
     height: 100%;
   }
   #zone_1_bg {
-    padding-top: 15%;
-    padding-bottom: 108%;
+    padding-top: 10%;
+    padding-bottom: 90%;
     background-attachment: inherit;
   }
   #focus_click {
-    top: 27%;
-    right: 25%;
-    width: 370px;
+    top: 33%;
+    right: 18%;
+    width: 460px;
+    height: 228px;
   }
   #focus_click p {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     color: #000000;
-    padding: 10px;
+    padding: 18px;
     background: #ffffff59;
     border-radius: 10px;
-  }
-  #focus_click.click_down:before, #focus_click.click_down:after {
-    border: 0 solid #00ff4c;
+    line-height: 35px;
+    letter-spacing: 4px;
   }
   /* -------------section_2區 (photo)----------- */
   .zone_2 {
