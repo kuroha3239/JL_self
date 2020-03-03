@@ -1153,6 +1153,9 @@ nav>ul>li>a:before {
     /* overflow-x: hidden; */
   }
   /* ------------------ sup_bg ---------------- */
+  .bg_sup_1 {
+    top: 13%;
+  }
   .bg_sup_2 {
     bottom: -250px;
     width: 25%;
@@ -1163,9 +1166,6 @@ nav>ul>li>a:before {
   /* ------------------ TOP區 ---------------- */
   .top {
     /* height: 100%; */
-  }
-  .bg_sup_1 {
-    top: 55%;
   }
   #main_bg {
     /* background-position: bottom 21px right -45px; */
@@ -1195,12 +1195,12 @@ nav>ul>li>a:before {
     font-size: 1.3rem;
   }
   nav {
-    /* bottom: 0; */
-    /* top: 20%; */
+    bottom: 0;
+    top: auto;
   }
   /* -------------section_1區 (focus)----------- */
   .zone_1 {
-    height: 100%;
+    /* height: 100%; */
   }
   #zone_1_bg {
     padding-top: 10%;
