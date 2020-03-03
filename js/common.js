@@ -298,16 +298,12 @@ $(function() {
       'data-aos-anchor-placement': 'top-bottom',
       // 'data-aos-delay': '0',
     });
-    $('h3').attr({
+    $('h3,#skill,#chart').attr({
       'data-aos': '',
       // 'data-aos-offset': '800',
       // 'data-aos-anchor-placement': 'bottom-bottom',
       // 'data-aos-delay': '0',
     });
-    // $('.top_recruit div').attr({
-    //   'data-aos-offset': '-150',
-    //   'data-aos-delay': '0',
-    // });
     AOS.refresh();
   }
 
