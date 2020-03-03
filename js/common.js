@@ -288,6 +288,10 @@ $(function() {
 
   // if (window_width <= 767) {
   if (window_width <= 1280) {
+    AOS.init({
+      duration: 500,
+    });
+
     $('nav').attr({
       'data-aos': '',
     });
