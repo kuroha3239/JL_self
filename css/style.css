@@ -1249,12 +1249,9 @@ nav>ul>li>a:before {
   /* -------------footer_bottom----------- */
   .footer_bottom {
     display: block;
+    margin: 3% auto 10%;
+    height: 500px;
   }
-  /* .skill_chart {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  } */
   .arrow {
     bottom: 5%;
     right: 7%;

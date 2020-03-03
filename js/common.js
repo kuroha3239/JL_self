@@ -140,7 +140,7 @@ $(function() {
 
     // -------------------加上footer bottom-------------------//
     var window_width = $(window).width();
-    if (window_width <= 1280) {
+    if (window_width > 1281) {
       if (scroll_act + $(window).height() + 1 > $('.wrapper').outerHeight()) {
         setTimeout(function() {
           $('body').addClass('footer_down');
