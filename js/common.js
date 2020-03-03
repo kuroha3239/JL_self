@@ -289,9 +289,7 @@ $(function() {
   // if (window_width <= 767) {
   if (window_width <= 1280) {
     $('nav').attr({
-      'data-aos-anchor': '#top',
-      'data-aos-offset': '800',
-      'data-aos-anchor-placement': 'top-bottom',
+      'data-aos': '',
     });
     $('#top_click span').attr({
       // 'data-aos-offset': '100',

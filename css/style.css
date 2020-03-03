@@ -1176,10 +1176,12 @@ nav>ul>li>a:before {
   }
   #top_click {
     bottom: 8%;
-    padding-bottom: 0px;
+    /* padding-bottom: 0px; */
+    padding-bottom: 70px;
   }
   #top_click span {
-    bottom: 175%;
+    /* bottom: 175%; */
+    bottom: 5%;
   }
   h1 {
     font-size: 8rem;
@@ -1209,9 +1211,9 @@ nav>ul>li>a:before {
   }
   #focus_click {
     top: 33%;
-    right: 18%;
-    width: 460px;
-    height: 228px;
+    right: 13%;
+    width: auto;
+    height: auto;
   }
   #focus_click p {
     font-size: 1.3rem;
@@ -1221,6 +1223,7 @@ nav>ul>li>a:before {
     border-radius: 10px;
     line-height: 35px;
     letter-spacing: 4px;
+    width: 490px;
   }
   #focus_click.click_down:before, #focus_click.click_down:after {
     border: 0 solid #00ff4c;
