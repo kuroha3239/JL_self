@@ -1227,7 +1227,7 @@ nav>ul>li>a:before {
     height: auto;
   }
   #focus_click p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #000000;
     padding: 18px;
     background: #ffffff59;
@@ -1257,7 +1257,11 @@ nav>ul>li>a:before {
   /* -------------footer_bottom----------- */
   .footer_bottom {
     display: block;
-    margin: 3% auto 10%;
+    margin: 7% auto 12%;
+    height: 500px;
+  }
+  .tk {
+    line-height: 530px;
     height: 500px;
   }
   .arrow {
