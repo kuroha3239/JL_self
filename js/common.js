@@ -70,7 +70,7 @@ $(function() {
     var scroll_act = $(window).scrollTop();
 
     // -------------------NAV FIXED-------------------//
-    top_section = $('.top').height() - 60;
+    top_section = $('#top').height() - 60;
     if (scroll_act >= top_section) {
       $('nav').addClass('dropdown_fixed');
     } else {
@@ -78,10 +78,10 @@ $(function() {
     }
 
     // -------------------NAV scrollspy-------------------//
-    zone_1 = $('.zone_1').offset().top - 60;
-    zone_2 = $('.zone_2').offset().top - 60;
-    zone_3 = $('.zone_3').offset().top - 60;
-    zone_4 = $('.zone_4').offset().top - 60;
+    zone_1 = $('#about').offset().top - 60;
+    zone_2 = $('#photo').offset().top - 60;
+    zone_3 = $('#graphic').offset().top - 60;
+    zone_4 = $('#web').offset().top - 60;
 
     if (scroll_act <= zone_1) {
       $('#logo').css('background', '#174887');
@@ -125,30 +125,35 @@ $(function() {
 
     // -------------------gotop 出現-------------------//
     if (scroll_act > 2000) {
-      $('.arrow').fadeIn();
+      $('#gotop').fadeIn();
     } else {
-      $('.arrow').fadeOut();
+      $('#gotop').fadeOut();
     }
 
     // -------------------gotop 變白-------------------//
-    footer = $('#footer').offset().top - 900;
-    if (scroll_act >= footer) {
-      $('.arrow').addClass('bottom');
-    } else {
-      $('.arrow').removeClass('bottom');
-    }
+    // footer = $('#footer').offset().top - 900;
+    // if (scroll_act >= footer) {
+    //   $('.arrow').addClass('bottom');
+    // } else {
+    //   $('.arrow').removeClass('bottom');
+    // }
 
     // -------------------加上footer bottom-------------------//
     var window_width = $(window).width();
+
+    var window_height = $(window).height();
+
+    var over_bottom = $('#wrapper').outerHeight();
+
     if (window_width > 1281) {
-      if (scroll_act + $(window).height() + 1 > $('.wrapper').outerHeight()) {
+      if (scroll_act + window_height + 1 > over_bottom) {
         setTimeout(function() {
           $('body').addClass('footer_down');
-          $('.footer_bottom').show(500);
+          $('#footer_bottom').show(500);
         }, 500);
       } else {
         $('body').removeClass('footer_down');
-        $('.footer_bottom').fadeOut(1000);
+        $('#footer_bottom').fadeOut(1000);
       }
     }
   });
@@ -156,7 +161,7 @@ $(function() {
   // -------------------focus BTN_Click 停止 & 消失-------------------//
 
   // focus的click
-  $('.focus').hover(
+  $('#focus_click').hover(
     function() {
       $(this)
         .find('img')
@@ -261,13 +266,14 @@ $(function() {
 
   // -------------------Final Click-------------------//
 
-  $('.final_click a').click(function() {
+  $('#final_click').click(function() {
     $('.final_sec')
       .addClass('flip')
       .fadeOut(1000);
-    $('.tk').fadeIn(3000);
+    $('#tk').fadeIn(2500);
+
     // 改變gotop的目標
-    $('.arrow').click(function() {
+    $('#gotop').click(function() {
       $('html,body').animate({ scrollTop: $('body').offset().top }, 1000);
     });
   });
