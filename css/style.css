@@ -1190,8 +1190,11 @@ nav>ul>li>a:before {
   }
   h2 {
     font-size: 5rem;
-    margin-top: 15%;
+    margin-top: 10%;
     width: 40%;
+  }
+  .h2_mt {
+    margin-top: 15%;
   }
   h4 {
     font-size: 1.3rem;
