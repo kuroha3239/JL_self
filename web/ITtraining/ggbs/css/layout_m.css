@@ -1,0 +1,141 @@
+@charset "big5";
+@import url("reset.css");
+/* CSS Document */
+
+body{
+	background-image:url(../image/mobile_gjun.jpg);
+
+	margin:0 auto;
+	background-repeat:no-repeat;
+	background-position:top center;
+	}
+	/* Retina圖片CSS */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min--moz-device-pixel-ratio: 2)
+{
+    body 
+	{
+    	background: url(../image/mobile_gjun-2x.jpg);
+		margin:0 auto;
+	    background-repeat:no-repeat;
+	    background-position:top center;
+        background-size:480px 530px;
+    }
+}
+
+#TOP{
+	width:320px;
+	height:auto;
+	margin:auto;
+	background-position :center;
+	}
+#text{
+	color: #999;
+	font-size: 11px;
+	font-family: Arial, 新細明體;
+	line-height: 1.2;
+	top: 369px;
+	left: 75px;
+	width: 150px;
+	position: absolute;
+	}
+	
+	
+#DIVFORM{
+	margin-top:130px;
+	width:320px;
+	height:400px;
+	position:relative;
+}
+
+#Q01{
+	position: absolute;
+	top: 128px;
+	left: 17px;
+	width: 300px;
+}
+	
+#NAME{
+	position: absolute;
+	top: 222px;
+	left: 118px;
+	width: 162px;
+	}
+#PHONE2{
+	position: absolute;
+	top: 257px;
+	left: 118px;
+	width: 162px;
+	}
+#MAIL2{
+	position: absolute;
+	top: 293px;
+	left: 118px;
+	width: 162px;
+	}
+#SCHOOL{
+	position: absolute;
+	top: 252px;
+	left: 210px;
+		}
+
+#READ{
+	position: absolute;
+	top: 282px;
+	left: 57px;
+	font-family: "微軟正黑體";
+	font-size: 9pt;
+	height: 27px;
+	width: 213px;
+	color: #F30;
+}
+#sBut{
+	position: absolute;
+	width: 256px;
+	height: 52px;
+	top: 275px;
+	left: -44px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	}
+	/* Retina圖片CSS */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min--moz-device-pixel-ratio: 2)
+{
+    #sBut{
+	background-image: url(but-01-2x.png);
+	background-size:256px 52px;
+	}
+}
+	
+.searchtext3 {
+	width:160px;
+	text-align: left;
+	letter-spacing:1pt; /*右框線*/
+	color: #333;
+	font-family:Arial;
+	font-size:14px;
+	border: 1px solid #999;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	line-height: 20px;
+	}
+.searchtext6 {
+	width:80px;
+	text-align: center;
+	letter-spacing: 1pt; /*右框線*/
+	color: #333;
+	font-family:Arial;
+	font-size:9pt;
+	border: 1px solid #999;
+	}
+.selectbox{
+	width:250px;
+	height:30px;
+	font-size:17px;
+	line-height:17px;
+	font-family:Arial, Helvetica, sans-serif, 微軟正黑體;
+	letter-spacing:0.5px;
+	}
+	

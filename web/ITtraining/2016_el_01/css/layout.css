@@ -1,0 +1,85 @@
+body{
+	background-color:#DDDDDD;font-family: "微軟正黑體";
+	}
+	
+h1{display:block; width:800px; height:382px; margin:0 auto; background-image:url(http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/image/EL_01.jpg); position: relative;}
+
+#title{
+	display: block;
+	width: 330px;
+	height: 100px;
+	line-height: 1.6em;
+	text-align: justify;
+	position: absolute;
+	z-index: 2;
+	top: 276px;
+	left: 100px;
+	color: #FFF;
+	font-size: 14px
+
+}
+#E01{width:800px;background-color:#FFF;margin:0 auto; color:#393;}
+
+#E02{width:800px; height:447px; background-image:url(http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/image/EL_04.jpg); 
+background-repeat:no-repeat; background-color:#FFF;margin:0 auto; font-size:25px; line-height:100px; font-weight:bold; color:#393;
+padding-top:80px;}
+
+#content{display: block;
+	width: 390px;
+	height: 100px;
+	line-height: 1.6em;
+	text-align: justify;
+	color: #000;
+	font-size: 15px;
+	margin:0 0 0 408px;}
+
+#E03{width:800px; background-color:#FFF;margin:0 auto; color:#393;;  padding-bottom:30px; position: relative;}
+#gift{
+	width: 321px;
+	height: 164px;
+	position: absolute;
+	z-index: 3;
+	left: 505px;
+	top: 170px;
+}
+
+table.type1 {
+    margin: 0 0 2em 0;
+    border-top: solid 1px #b9d6df;
+    border-left: solid 1px #b9d6df;
+    border-collapse: collapse;
+    width: 700px;
+	margin:0 auto; 
+    clear: both;
+}
+table.type1 th, table.type1 td, table.type2 th, table.type2 td {
+	padding: 20px 15px;
+	border-right: solid 1px #b9d6df;
+	border-bottom: solid 1px #b9d6df;
+	color: #333;
+}
+.form-left {
+    width: 200px;
+	text-align:center;
+	color: #000;
+	font-weight:bolder;
+}
+user agent stylesheettd, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+#E04{ width:800px; height:250px; background-color:#e4e9ed; margin:50px auto; text-align:center; padding-top:40px; font-size:20px; color:#69737f;}
+#E05{ width:750px; height:134; clear:both; margin:0 auto; margin-top:30px;}
+
+#RightName{
+	background-image:url(http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/image/right_name.png);
+	width:230px;
+	height:315px;
+	position:fixed;
+	top: 300px;
+	right:0px;
+	opacity: 1;
+	display: block;
+	z-index:9999;
+	margin-left: 500px;
+}

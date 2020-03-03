@@ -1,0 +1,348 @@
+﻿/* CSS Document */
+
+body{
+	background-image:url(images/carbon_fibre.png);
+	}
+
+#MAINMAIN{
+	width:997px;margin:0 auto; background-image:url(images/bgbg.gif);position:relative;}
+	
+#MAINMAIN2{
+	width:874px;margin:0 auto;}
+
+#RightName{
+	background-image:url(images/right_name.png);
+	width:230px;
+	height:300px;
+	position: fixed;
+	top: 250px;
+	right:0px;
+	opacity: 1;
+	display: block;
+	z-index:9999;
+	margin-left: 500px;
+}
+
+
+	
+h1{
+	display:block;
+	width:997px;
+	height:450px;
+	background-image:url(images/bigbanner.jpg);
+	text-indent: -9999px;
+	}
+
+h2{
+	display:block;
+	width:596px;
+	height:60px;
+	padding-top:20px;
+	padding-left:305px;
+	font-size:30px;
+	color:#064996;
+	border-bottom:1px solid #666;
+	border-top:1px solid #666;
+	margin-bottom:20px;
+        text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+	}
+
+h3{
+	display:block;
+	background-image:url(images/title_bg.jpg);
+	background-repeat:no-repeat;
+	width:871px;
+	height:36px;
+	font-size:16px;
+	padding-left:30px;
+	line-height:2.4em;
+	color:#FFF;
+	margin-bottom:25px;
+	}	
+
+
+#TAB{
+	width:807px;
+	height:127px;
+	background-image: url(images/green/center_w.png);
+	padding-left:190px;
+	}
+	
+
+#TAB2{
+	width:807px;
+	height:127px;
+	background-image: url(images/tab_bg.gif);
+	padding-left:190px;
+	}	
+
+
+.LOGO{
+	position: absolute;
+	z-index: 11;
+	left: 22px;
+	top: 386px;
+}	
+
+#COURSE_2{
+	position: absolute;
+	z-index: 9;
+	left: -1px;
+	top: 463px;
+}
+
+.note{
+	position: absolute;
+	z-index: 12;
+	left: -15px;
+	top: 299px;
+}
+.line{position: absolute;z-index: 3;left: 378px;top: 470px;}
+.line2{position: absolute;z-index: 3;left: 732px;top: 470px;}
+.line3{position: absolute;z-index: 3;left: 578px;top: 470px;}
+.bored_left{position: absolute;z-index: 2;left: -20px;top: 451px;}
+.bored_right{
+	position: absolute;
+	z-index: 2;
+	left: 997px;
+	top: 451px;
+}
+.join{position: absolute;z-index: 3;left: 824px;top: 588px;}
+
+.COURSE{
+	float:left;
+	}
+
+.COURSE_BOX{
+	background-image:url(images/BOX_bg.jpg);
+	padding:25px 50px;
+	font-family:微軟正黑體;
+	font-weight:bold;
+	display:block; /*顯示 block*/  /*不顯示 none*/
+	}
+	
+.Course1{
+	float:right;
+	margin-left:5px;
+	margin-top:88px;
+	}
+
+.Course_box{
+	
+	font-family:微軟正黑體;
+	font-weight:bold;	
+	}	
+	
+	
+
+#goal{
+	width: 610px;
+	height: 370px;
+	border: 1px solid #064996;
+	float: left;
+	} 
+	
+#goal p{
+	width:626px;
+	margin-left:20px;
+	padding-top:30px;
+	border:none;
+	font-size:16px;
+	line-height:2.2em;
+	}
+.outline{
+	width:669px;
+	height:82px;
+	line-height:2.0em;
+	border:1px solid #064996;
+	padding:20px 0 0 230px;
+	margin-bottom:20px;
+	}
+	
+.td01{
+	width: 22%;
+padding: 10px 10px;
+border: solid 1px #ccc;
+background: #5780c2;
+color: #fff;
+	}
+	
+.td02{
+	border: solid 1px #ccc;
+background: #FFF;
+padding: 10px 10px;
+vertical-align: top;
+line-height:1.8em;}
+
+#form{
+	margin:20px 0 5px 150px;
+	color: #FFF;
+	font-family:微軟正黑體;
+	font-weight:bold;
+	}
+	
+.rule{
+	height:30px;
+	}
+	
+.NEW{
+	margin:10px 0;
+	width:423px;
+	float:left;
+	}
+	
+.NEW p{
+	display:block;
+	font-weight: 500;
+	margin-top:20px;
+	letter-spacing:1px;
+	font-size:16px;
+	line-height:1.8em;
+	padding:0 20px;
+	}
+	
+.PJ_BOX{
+	margin:10px 0 30px 0;
+	width:900px;
+	margin-left:10px;
+	}
+	
+.PJ{
+	float:left;
+	margin-left:10px;
+	margin-bottom:10px;
+	}
+/* trend產業趨勢 */
+#trend{
+	background-image:url(images/content_bg.png);
+	padding-left:85px;
+
+	}
+.trend_box{
+	width:700px;}	
+
+.trend_box h5{
+	display:block;
+	font-family:"微軟正黑體", "新細明體", "細明體";
+	font-size:20px;
+	padding-left:20px;
+	font-weight:bold;
+	color:#ff3600;
+}
+
+.trend_box h4{
+	display:block;
+	width:700px;
+	font-family:"微軟正黑體", "新細明體", "細明體";
+	padding-top:20px;
+	font-size:16px;
+	padding-left:20px;
+	line-height:1.6em;
+	text-align:justify;
+}
+
+#linuxTrend p{
+	font-size:15px;
+	line-height:1.6em;
+	margin:235px 30px 0 35px;
+	text-align:center;
+	}
+
+.movie{
+	margin:15px 0 20px -50px;
+	height:300px;
+	width:997px;
+	}
+	
+.movie p{
+	display:block;
+	width:360px;
+	float:left;
+	line-height:1.6em;
+	margin:125px 40px 0 45px;
+	}
+
+
+.2015new{
+	margin:15px 0 50px -50px;
+	height:489px;
+	width:997px;
+	}
+/*照片輪播*/
+.focus{ position:relative; width:997px; height:450px; background-color: #000;}  
+.focus img{ width: 997px; height: 450px;} 
+.focus .shadow .title{width: 260px; height: 65px;padding-left: 30px;padding-top: 20px;}
+.focus .shadow .title a{ text-decoration:none; color:#fff; font-size:14px; font-weight:bolder; overflow:hidden; }
+.focus .btn{ position:absolute; bottom:34px; left:510px; overflow:hidden; zoom:1;} 
+.focus .btn a{position:relative; display:inline; width:13px; height:13px; border-radius:7px; margin:0 5px;color:#B0B0B0;font:12px/15px "\5B8B\4F53"; text-decoration:none; text-align:center; outline:0; float:left; background:#D9D9D9; }  
+.focus .btn a:hover,.focus .btn a.current{  cursor:pointer;background:#fc114a;}  
+.focus .fPic{ position:absolute; left:0px; top:0px; }  
+.focus .D1fBt{ overflow:hidden; zoom:1;  height:8px; z-index:10;  }  
+.focus .shadow{ width:100%; position:absolute; bottom:0; left:0px; z-index:10; height:40px; line-height: 40px; background:rgba(0,0,0,0.6);    
+filter:progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#80000000',endColorstr = '#80000000')\9;  display:block;  text-align:left; }  
+.focus .shadow a{ text-decoration:none; color:#fff; font-size:20px; overflow:hidden; margin-left:10px; font-family: "\5FAE\8F6F\96C5\9ED1"; margin-left:236px; }  
+.focus .fcon{ position:relative; width:100%; float:left;  display:none; background:#000  }  
+.focus .fcon img{ display:block; }  
+.focus .fbg{bottom:10px; right:40px; position:absolute; height:21px; text-align:center; z-index: 200; }  
+.focus .fbg div{margin:4px auto 0;overflow:hidden;zoom:1;height:14px}    
+.focus .D1fBt a{position:relative; display:inline; width:12px; height:12px; border-radius:7px; margin:0 5px;color:#B0B0B0;font:12px/15px "\5B8B\4F53"; text-decoration:none; text-align:center; outline:0; float:left; background:#D9D9D9; }    
+.focus .D1fBt .current,.focus .D1fBt a:hover{background:#fc114a;}    
+.focus .D1fBt img{display:none}    
+.focus .D1fBt i{display:none; font-style:normal; }    
+.focus .prev,.focus .next{position:absolute;width:40px;height:74px;background: url(images/focus_btn.png) no-repeat;}
+.focus .prev{top: 50%;margin-top: -37px; left: 0;background-position:0 -74px; cursor:pointer; }  
+.focus .next{top: 50%;margin-top: -37px; right: 0;  background-position:-40px -74px;  cursor:pointer;}  
+.focus .prev:hover{  background-position:0 0; }  
+.focus .next:hover{  background-position:-40px 0;}  
+
+
+
+
+/*相簿*/
+p{margin:0px 0px 15px 0px;}
+a img{border:none;}
+a{color: #06F;}
+a:hover{color:#C30;}
+
+
+
+a.contactLink{font-size:.8em;padding:0px 30px 0px 0px;text-transform:uppercase;text-decoration:none}
+a.zoom{font-size:.8em;background:url(images/template/link_zoom2.png) no-repeat 0px 0px;padding:0px 0px 5px 20px;text-transform:uppercase;text-decoration:none}
+.clear_both{clear:both;line-height:1px;}
+.gallery_data{padding:40px;display:none;}
+.gallery_preload_area{display:none;}
+.gallery_container{width:900px;margin:20px auto 0px auto;}
+.gallery_credit{margin:0px 0px 10px 15px;float:left;width:425px;}
+.gallery_type{margin:0px 0px 10px 0px;float:left;width:500px;text-align:right;padding:4px 0px 0px 0px;}
+.gallery_content{margin:0px;padding:15px 0px 1px 10px; border:1px solid #194c9f;}
+.gallery_thumbnails{width:500px;margin-left:0px;float:left;display:inline;}
+.gallery_thumbnails a{display:inline-block;height:75px;width:75px;overflow:hidden;float:left;border:1px solid #555;margin:0px 20px 23px 0px;}
+.gallery_thumbnails a:hover{border-color:#fff;}
+.gallery_thumbnails a.selected{border-color:#fff;}
+.gallery_preview{width:375px;height:375px;float:left;}
+.gallery_preview a{display:block;width:375px;height:375px;border:1px solid #555;}
+.gallery_preview a:hover{border-color:#fff;}
+.gallery_caption{width:375px;float:right;}
+
+/* Hide for browsers with no JavaScript support */
+
+.gallery_data{display:block}
+.gallery_thumbnails{width:auto;}
+.gallery_preview{display:none;}
+.gallery_caption{display:none;}
+/*下方表單*/
+
+ .down
+{
+            background-color: #a90d0d;
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            bottom: 0px;
+            left: auto;
+            right: auto;
+            text-align: center;
+            _position: absolute;
+            _top: expression(offsetParent.scrollTop + document.documentElement.clientHeight - this.offsetHeight);
+			z-index:10;
+     }

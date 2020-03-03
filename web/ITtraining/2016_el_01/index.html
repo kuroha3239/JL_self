@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>艾鍗學院_嵌入式Linux開發實物學程</title>
+<!--meta-->
+<meta name="keywords" content="嵌入式, 嵌入式系統, 嵌入式linux, Embedded Linux, lINUX Kernel, system call, I/O, IPC, Socket, pthread, Flash layout Design, Linux Driver, GPIO, UART, Ethernet, MTD, SDIO, 驅動程式, linux arm, toolchain, rootfs, cramfs, jffs2, yaffs, cifs, ubifs">
+<meta namge="description" content="透過本課程訓練，讓您可以快速了解Embedded Linux的開發流程，而能將Embedded Linux導入產品開發，全面提昇嵌入式產品開發的技術能力。
+名">
+<meta name="author" content="艾鍗學院">
+<meta name="copyright" content="本網頁著作權艾鍗學院所有">
+<meta name="URL" content="http://www.ittraining.com.tw/ittraining/EDM_web/2016_me_02/index.html">
+
+<!-- <link href="http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/image/reset.css" rel="stylesheet" type="text/css" /> -->
+<!-- <link href="http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/css/layout.css" rel="stylesheet" type="text/css" /> -->
+
+<style>
+  body{
+	background-color:#DDDDDD;font-family: "敺株��迤暺煾��";
+	}
+	
+h1{display:block; width:800px; height:382px; margin:0 auto; background-image:url(http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/image/EL_01.jpg); position: relative;}
+
+#title{
+	display: block;
+	width: 330px;
+	height: 100px;
+	line-height: 1.6em;
+	text-align:center;
+	position: absolute;
+	z-index: 2;
+	top: 276px;
+	left: 100px;
+	color: #FFF;
+	font-size: 14px
+
+}
+#E01{width:800px;background-color:#FFF;margin:0 auto; color:#393;}
+
+#E02{width:800px; height:426px; background-image:url(http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/image/EL_05.jpg); 
+background-repeat:no-repeat; background-color:#FFF;margin:0 auto; font-size:25px; line-height:100px; font-weight:bold; color:#393;
+}
+
+#content{display: block;
+	width: 390px;
+	height: 100px;
+	line-height: 1.6em;
+	text-align: justify;
+	color: #000;
+	font-size: 15px;
+	margin:0 0 0 408px;}
+
+#E03{width:800px; background-color:#FFF;margin:0 auto; color:#393;;  padding-bottom:30px; position: relative;}
+#gift{
+	width: 321px;
+	height: 164px;
+	position: absolute;
+	z-index: 3;
+	left: 505px;
+	top: 140px;
+}
+
+table.type1 {
+    margin: 0 0 2em 0;
+    border-top: solid 1px #b9d6df;
+    border-left: solid 1px #b9d6df;
+    border-collapse: collapse;
+    width: 700px;
+	margin:0 auto; 
+    clear: both;
+}
+table.type1 th, table.type1 td, table.type2 th, table.type2 td {
+	padding: 20px 15px;
+	border-right: solid 1px #b9d6df;
+	border-bottom: solid 1px #b9d6df;
+	color: #333;
+}
+.form-left {
+    width: 200px;
+	text-align:center;
+	color: #000;
+	font-weight:bolder;
+}
+user agent stylesheettd, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+#E04{ width:800px; height:145px; background-color:#e4e9ed; margin:30px auto; text-align:center; color:#69737f;}
+#E05{ width:798px; height:140; clear:both; margin:0 auto; }
+
+#RightName{
+	background-image:url(http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/image/right_name.png);
+	width:230px;
+	height:315px;
+	position:fixed;
+	top: 300px;
+	right:0px;
+	opacity: 1;
+	display: block;
+	z-index:9999;
+	margin-left: 500px;
+}
+</style>
+
+</head>
+
+<body>
+<iframe src="http://www.ittraining.com.tw/edm_header.html" marginwidth="0" marginheight="0" frameborder="0" height="101" scrolling="no" width="100%"></iframe>
+<h1>&nbsp;</h1> <!--大banner圖片在CSS裡-->
+
+<div id="E01"><img src="image/EL_02.jpg" /></div>
+<div id="E01"><img src="image/EL_03.jpg" /></div>
+
+<!-- <div id="E01"><img src="http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/image/EL_02.jpg" /></div>
+<div id="E01"><img src="http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/image/EL_03.jpg"  /></div>
+<div id="E01"><img src="http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/image/EL_04.jpg"  /></div> -->
+
+<div id="E02">
+<!--嵌入的影片背景圖語法在CSS裡 (E02)-->
+<!--嵌入iframe後記得要加上 style="margin:-23px 0 0 54px;"  -->
+<iframe style="margin:90px 0 0 407px;" width="380" height="214" src="https://www.youtube.com/embed/1aT8bETAUGk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<div id="E03" class="表單">
+<div id="gift"><img src="image/gift.png" width="321" height="194" /></div>
+<!-- <img src="http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/image/EL_05.jpg" width="800" /> -->
+<div id="E01"><img src="image/EL_05.jpg" /></div>
+<table class="type1">
+       <!--PDST-->
+            <tbody>
+            <form id="form1" action="http://www.ittraining.com.tw/etd/course/2016_edm_ad_02.php" method="post" name="form1" onsubmit="return validateFormOnSubmit(this)">
+            <tr>
+            <td class="form-left">姓名</td>
+            <td><input name="name"  type="text"  onblur="YY_checkform('form1[0]');return document.MM_returnValue"   class="input-txtbox2" id="name1" required=""></td>
+            </tr>
+            <tr>
+            <td class="form-left">電話</td>
+            <td><input name="phone"   type="text"    class="input-txtbox2" id="name1" required=""></td>
+            </tr>
+            <tr>
+            <td class="form-left">E-mail</td>
+            <td><input name="email" type="text"   class="input-txtbox2" id="name1" required=""></td>
+            </tr>
+            <tr>
+            <td class="form-left">場次</td>
+            <td><div style="display: block; float: left; padding: 0; margin: 0; color: #333; "><input type="radio" name="kind_class" value="請聯絡學員" checked="true">&nbsp; 詳細說明會時間，會請專人與您聯絡，謝謝<div>
+
+
+</td>
+            </tr>
+            
+            <tr>
+              <td colspan="2" class="txt-center" style="text-align:center;">
+              <div style="display: none;"><select id="selsection" class="singin_padding_left" name="selsection" size="1"> <option selected="selected" value="課程說明會 - Android實戰開發(Android導向)">Android實戰開發</option></select></div>
+              <!-------------送出按鈕----------------------> <input id="button" style="margin:0 auto; " onclick="payselect();" type="image" name="button" src="http://www.ittraining.com.tw/ittraining/images/2014_classpage/sure.gif"></td>
+            </tr>
+            </form>
+          </tbody></table>
+</div>
+<!-- <div id="E04">- 推薦相關進階課程 -
+<div id="E05">
+<a href="http://www.ittraining.com.tw/ittraining/105IEI/index.html" target="_blank"><img style="float:left; margin-right:12px;" src="image/litbanner_iotme.gif" width="241" height="139" /></a>
+<a href="http://www.ittraining.com.tw/ittraining/index.php/course/android/android-ap01" target="_blank"><img style="float:left;margin-right:12px;" src="image/litbanner_ad.jpg" width="241" height="139" /></a>
+<a href="http://www.ittraining.com.tw/ittraining/index.php/course/firmware/pic" target="_blank"><img style="float:left;" src="image/litbanner_linux.png" width="241" height="139" /></a></div>
+
+</div> -->
+
+
+<!----右側表單----->
+<div id="RightName">
+
+<form id="form1" action="http://www.ittraining.com.tw/etd/course/2016_edm_ad_02.php" method="post" name="form1" onsubmit="return validateFormOnSubmit(this)">
+
+<div class="rule" style="margin:125px 0 38px 100px; width:30px;">
+
+<input id="txtuser" onblur="YY_checkform('form1[0]');return document.MM_returnValue" type="text" name="name" size="13" maxlength="10" style="margin-bottom:10px;" />  
+<input id="phone" type="text" name="phone" size="13" style="margin-bottom:10px;" />
+<input id="email" type="text" name="email" size="13" style="margin-bottom:10px;" /> <br/>
+</div>
+
+
+<div class="rule" style="margin:-35px 0 0 120px; width:95px;">
+<!------領取--------->
+<div style="display: none;">
+<input name="radio_pj" type="radio" value="pj1" checked=""></div>
+<input onclick="payselect();"   type="image" name="button" id="button" src="http://www.ittraining.com.tw/ittraining/EDM_web/2016_el_01/image/button.jpg" width="95" height="25" border="0" />
+</div>
+</form>
+</div>
+
+<div id="footer2">
+  <iframe src="http://www.ittraining.com.tw/edm_footer.html" marginwidth="0" marginheight="0" frameborder="0" height="107" scrolling="no" width="100%"></iframe></div>
+</body>
+</html>
