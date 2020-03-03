@@ -1162,7 +1162,7 @@ nav>ul>li>a:before {
     height: 100%;
   }
   .bg_sup_1 {
-    top: 3%;
+    top: 14.78%;
   }
   #main_bg {
     /* background-position: bottom 21px right -45px; */
@@ -1173,6 +1173,10 @@ nav>ul>li>a:before {
   }
   #top_click {
     bottom: 8%;
+    padding-bottom: 0px;
+  }
+  #top_click span {
+    bottom: 175%;
   }
   h1 {
     font-size: 8rem;
@@ -1186,8 +1190,8 @@ nav>ul>li>a:before {
     font-size: 1.3rem;
   }
   nav {
-    /* bottom: 52%; */
-    /* display: none; */
+    bottom: 0;
+    top: 23.6%;
   }
   /* -------------section_1區 (focus)----------- */
   .zone_1 {
@@ -1214,15 +1218,15 @@ nav>ul>li>a:before {
     border: 0 solid #00ff4c;
   }
   /* -------------section_2區 (photo)----------- */
-  #zone_2_bg {
+  .zone_2 {
     padding-top: 15%;
   }
   /* -------------section_3區 (graphic)----------- */
-  #zone_3_bg {
+  .zone_3 {
     padding-top: 15%;
   }
   /* -------------section_4區 (web)----------- */
-  #zone_4_bg {
+  .zone_4 {
     padding-top: 15%;
   }
   .content {
@@ -1236,6 +1240,10 @@ nav>ul>li>a:before {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+  .arrow {
+    bottom: 5%;
+    right: 7%;
   }
 }
 

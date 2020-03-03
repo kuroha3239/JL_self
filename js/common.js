@@ -289,16 +289,16 @@ $(function() {
   // if (window_width <= 767) {
   if (window_width <= 1280) {
     $('nav').attr({
-      // 'data-aos-anchor': '#top_news_point',
+      // 'data-aos-anchor': '#top',
       // 'data-aos-offset': '800',
       'data-aos-anchor-placement': 'top-bottom',
     });
-    // $('#sec_news div').attr({
-    //   'data-aos-anchor': '#top_news_point',
-    //   'data-aos-offset': '800',
-    //   'data-aos-anchor-placement': 'bottom-bottom',
-    //   'data-aos-delay': '1000',
-    // });
+    $('h3').attr({
+      'data-aos-anchor': '#footer',
+      'data-aos-offset': '800',
+      //   'data-aos-anchor-placement': 'bottom-bottom',
+      //   'data-aos-delay': '1000',
+    });
     // $('.top_case figure').attr({
     //   'data-aos-offset': '100',
     //   'data-aos-anchor-placement': 'bottom-bottom',
