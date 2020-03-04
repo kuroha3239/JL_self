@@ -50,6 +50,12 @@ body a:hover {
   cursor: pointer;
 }
 
+img {
+  max-width: 100%;
+  /*不使用width:100% 是因避免圖片解析度不好，隨父元素被放大時會糊掉*/
+  height: auto;
+}
+
 button {
   border: 0;
   background: none;
@@ -107,7 +113,7 @@ h2 {
 }
 
 .h2_bg {
-  background: #fff;
+  background: #ffffff82;
 }
 
 h3 {
@@ -491,7 +497,7 @@ nav>ul>li>a:before {
 /* focus left (x,y) */
 
 #focus_click:hover:before {
-  transform: translate(-20px, 45px) scale(1);
+  transform: translate(-20px, 45px) scale(1.5);
   border-bottom-width: 5px;
   border-left-width: 5px;
 }
@@ -499,7 +505,7 @@ nav>ul>li>a:before {
 /* focus right (x,y) */
 
 #focus_click:hover:after {
-  transform: translate(10px, -15px) scale(1);
+  transform: translate(10px, -15px) scale(1.5);
   border-top-width: 5px;
   border-right-width: 5px;
 }
@@ -531,7 +537,7 @@ nav>ul>li>a:before {
   transition: all .2s ease-in-out;
 }
 
-#focus_click p::after {
+/* #focus_click p::after {
   content: attr(show);
   color: #ffffff00;
   position: absolute;
@@ -550,7 +556,7 @@ nav>ul>li>a:before {
   background: #ffffffeb;
   border-radius: 5px;
   padding: 8px 11px 8px 8px;
-}
+} */
 
 /* gotop */
 
@@ -1162,10 +1168,14 @@ nav>ul>li>a:before {
   }
   /* ------------------ TOP區 ---------------- */
   #main_bg {
+    background-image: url(../images/bg/top_bg_pad.jpg);
     background-position: center bottom;
     padding-top: 4%;
     padding-bottom: 86%;
     /* background-attachment: inherit; */
+  }
+  #top .main_bg_click {
+    background-image: url(../images/bg/top_bgc_pad.jpg);
   }
   #top_click {
     bottom: 8%;
@@ -1202,9 +1212,15 @@ nav>ul>li>a:before {
     letter-spacing: 4px;
     width: 490px;
   }
-  #focus_click.click_down:before, #focus_click.click_down:after {
-    border: 0 solid #00ff4c;
+  #focus_click:hover:before {
+    transform: translate(-30px, 30px) scale(1.3);
   }
+  #focus_click:hover:after {
+    transform: translate(30px, -30px) scale(1.3);
+  }
+  /* #focus_click.click_down:before, #focus_click.click_down:after {
+    border: 0 solid #00ff4c;
+  } */
   /* -------------section_2區 (photo)----------- */
   .zone_2 {
     padding-top: 15%;
@@ -1239,19 +1255,21 @@ nav>ul>li>a:before {
 /* -------------------------PHONE----------------------- */
 
 @media (max-width: 767px) {
-  .top, .zone_1 {
-    height: auto;
-  }
   /* ------------------ font ---------------- */
   h1 {
     font-size: 4.5rem;
   }
   h2 {
     font-size: 3.5rem;
-    width: 65%;
+    width: 70%;
   }
   .h2_mt {
     margin-top: 15%;
+  }
+  h3 {
+    font-size: 3rem;
+    margin: 5% auto;
+    width: 40%;
   }
   h4 {
     font-size: 1rem;
@@ -1261,20 +1279,25 @@ nav>ul>li>a:before {
     top: 70%;
   }
   .bg_sup_2 {
-    bottom: -8%;
+    bottom: -10%;
     width: 30%;
+  }
+  .bg_sup_3 {
+    right: 0;
+    top: 25%;
   }
   /* ------------------ TOP區 ---------------- */
   #main_bg {
+    background-image: url(../images/bg/top_bg_sp.jpg);
     padding-top: 15%;
     padding-bottom: 165%;
+  }
+  #top .main_bg_click {
+    background-image: url(../images/bg/top_bgc_sp.jpg);
   }
   #top_click {
     left: 45%;
   }
-  /* #top_click span {
-    bottom: 5%;
-  } */
   /* ------------------ NAV ---------------- */
   nav>ul>li>a {
     font-size: 1rem;
@@ -1287,7 +1310,6 @@ nav>ul>li>a:before {
     background-position: 28% 65%;
     padding-top: 20%;
     padding-bottom: 145%;
-    /* background-attachment: fixed; */
   }
   #focus_click {
     top: 35%;
@@ -1301,24 +1323,48 @@ nav>ul>li>a:before {
     letter-spacing: 1px;
     width: 70%;
     margin: auto;
+    background: #ffffff7a;
   }
-  #focus_click.click_down:before, #focus_click.click_down:after {
-    border: 0 solid #00ff4c;
+  #focus_click:hover:before {
+    transform: translate(30px, 30px) scale(1);
+  }
+  #focus_click:hover:after {
+    transform: translate(-30px, -30px) scale(1);
   }
   /* -------------section_2區 (photo)----------- */
   .zone_2 {
-    padding-top: 15%;
+    padding-top: 25%;
+  }
+  .case_card {
+    margin: 10% auto;
+  }
+  .gallery div {
+    width: 24%;
+  }
+  .inframe img {
+    filter: grayscale(0%);
   }
   /* -------------section_3區 (graphic)----------- */
   .zone_3 {
-    padding-top: 15%;
+    padding-top: 25%;
+  }
+  .inframe {
+    height: 200px;
   }
   /* -------------section_4區 (web)----------- */
   .zone_4 {
-    padding-top: 15%;
+    padding-top: 25%;
+  }
+  .web_case {
+    width: 90%;
+    margin: 20% auto;
   }
   .content {
-    width: 30%;
+    width: 45%;
+    margin: 2%;
+  }
+  .content:first-child {
+    margin: 2% 5%;
   }
   /* -------------footer_bottom----------- */
   #footer_bottom {
@@ -1326,23 +1372,43 @@ nav>ul>li>a:before {
     margin: 7% auto 12%;
     height: 500px;
   }
+  .my_skill {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .skill_chart {
+    width: 100%;
+    margin: 10% auto;
+  }
+  .skill_content {
+    width: 100%;
+    margin: auto;
+  }
+  .skill_content p {
+    padding: 0 0 0 1%;
+  }
+  .final_click {
+    margin-bottom: 15%;
+    padding: 10px;
+  }
   #tk {
-    line-height: 530px;
-    height: 500px;
+    font-size: 3rem;
+    line-height: 100px;
+    top: 50%;
   }
   #gotop {
-    bottom: 5%;
+    bottom: 3%;
     right: 7%;
   }
 }
 
-/*---------------------NAV---------------------*/
+/* // ------------------- 當前 scrolltop 數值-------------------// */
 
-.gst {
+/* .gst {
   position: fixed;
   top: 15%;
   left: 5%;
   background: #fff;
   z-index: 5000;
   font-size: 3rem;
-}
+} */

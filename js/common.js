@@ -317,30 +317,47 @@ $(function() {
   }
 
   // ------------------- AOS 調整-------------------//
-  // if (window_width <= 767) {
-  // location.reload();
-  // return;
+  if (window_width <= 767) {
+    $('h3,#skill,#chart').attr({
+      'data-aos': 'fade-up',
+      // 'data-aos-offset': '800',
+      'data-aos-anchor-placement': 'top-bottom',
+      // 'data-aos-delay': '0',
+    });
 
-  // location.reload();
-  // return;
-  // $(window).resize(function() {
-  //   if (
-  //     window_Width != $(window).width() ||
-  //     window_Height != $(window).height()
-  //   ) {
-  //     location.reload();
-  //     return;
-  //   }
-  // });
-
-  // AOS.init({ disable: 'mobile' });
-  // AOS.refresh();
-  // }
+    AOS.refresh();
+  }
 });
 
-$(function() {
-  $(window).scroll(function() {
-    var scrollVal = $(this).scrollTop();
-    $('.qScrollTop').text(scrollVal);
-  });
-});
+// ------------------- ios 縮放 雙擊放大事件-------------------//
+window.onload = () => {
+  document.addEventListener(
+    'touchstart',
+    event => {
+      if (event.touches.length > 1) {
+        event.preventDefault();
+      }
+    },
+    { passive: false }
+  );
+
+  let lastTouchEnd = 0;
+  document.addEventListener(
+    'touchend',
+    event => {
+      const now = new Date().getTime();
+      if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+      }
+      lastTouchEnd = now;
+    },
+    false
+  );
+};
+// ------------------- 當前 scrolltop 數值-------------------//
+// $(function() {
+//   $(window).scroll(function() {
+//     var scrollVal = $(this).scrollTop();
+//     $('.qScrollTop').text(scrollVal);
+//   });
+// });
