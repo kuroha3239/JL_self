@@ -78,7 +78,7 @@ button {
 
 #main_bg {
   width: 100%;
-  background-image: url("../images/bg/top_bg.jpg");
+  background-image: url("../images/bg/top_bg_pc.jpg");
   background-size: cover;
   /* background-position: center bottom;
   padding-bottom: 35%; */
@@ -90,7 +90,7 @@ button {
 }
 
 #top .main_bg_click {
-  background-image: url("../images/bg/top_bgc.jpg");
+  background-image: url("../images/bg/top_bgc_pc.jpg");
 }
 
 h1 {
@@ -465,7 +465,7 @@ nav>ul>li>a:before {
   position: absolute;
   width: 15px;
   height: 15px;
-  border: 0 solid #00ff4c;
+  border: 0 solid #db1b2d;
   transition: all 0.25s cubic-bezier(1, 0.2, 0.26, 0.7);
   transform: translate(0px, 0px) scale(0.8);
   opacity: 0;
@@ -486,7 +486,7 @@ nav>ul>li>a:before {
 }
 
 #focus_click.click_down:before, #focus_click.click_down:after {
-  border: 0 solid #db1b2d;
+  border: 0 solid #00ff4c;
 }
 
 #focus_click:hover:before, #focus_click:hover:after {
@@ -1136,7 +1136,6 @@ nav>ul>li>a:before {
   }
   #wrapper {
     position: relative;
-    /* overflow-x: hidden; */
   }
   /* ------------------ font ---------------- */
   h1 {
@@ -1218,9 +1217,6 @@ nav>ul>li>a:before {
   #focus_click:hover:after {
     transform: translate(30px, -30px) scale(1.3);
   }
-  /* #focus_click.click_down:before, #focus_click.click_down:after {
-    border: 0 solid #00ff4c;
-  } */
   /* -------------section_2區 (photo)----------- */
   .zone_2 {
     padding-top: 15%;
@@ -1388,7 +1384,7 @@ nav>ul>li>a:before {
     padding: 0 0 0 1%;
   }
   .final_click {
-    margin-bottom: 15%;
+    margin: 5% auto 15%;
     padding: 10px;
   }
   #tk {
