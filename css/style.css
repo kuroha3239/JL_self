@@ -116,6 +116,10 @@ h2 {
   background: #ffffff82;
 }
 
+.h2_mt {
+  margin-top: 4%;
+}
+
 h3 {
   font-size: 3.3rem;
   font-weight: 550;
@@ -378,10 +382,18 @@ nav>ul>li>a:before {
 
 /* ------------bg_support------------- */
 
-.bg_sup_1 {
+.bg_sup_1-1 {
   width: 100%;
   position: absolute;
-  top: -90px;
+  bottom: 25px;
+  left: 0;
+  z-index: 500;
+}
+
+.bg_sup_1-2 {
+  width: 100%;
+  position: absolute;
+  top: -25px;
   left: 0;
   z-index: 500;
 }
@@ -404,7 +416,7 @@ nav>ul>li>a:before {
   width: 36%;
   position: absolute;
   left: 0%;
-  top: 0%;
+  top: -55%;
 }
 
 .bg_sup_5 {
@@ -417,7 +429,7 @@ nav>ul>li>a:before {
 .bg_sup_6 {
   width: 30%;
   position: absolute;
-  left: 0%;
+  left: -1px;
   bottom: 20%;
   z-index: -1;
 }
@@ -443,8 +455,8 @@ nav>ul>li>a:before {
   width: 370px;
   height: 100px;
   position: absolute;
-  top: 43%;
-  right: 30%;
+  top: 45%;
+  right: 35%;
   z-index: 600;
 }
 
@@ -485,10 +497,6 @@ nav>ul>li>a:before {
   border-right-width: 1px;
 }
 
-#focus_click.click_down:before, #focus_click.click_down:after {
-  border: 0 solid #00ff4c;
-}
-
 #focus_click:hover:before, #focus_click:hover:after {
   transition: all 2s cubic-bezier(0.14, 1.13, 0, 0.91);
   opacity: 1;
@@ -497,7 +505,7 @@ nav>ul>li>a:before {
 /* focus left (x,y) */
 
 #focus_click:hover:before {
-  transform: translate(-20px, 45px) scale(1.5);
+  transform: translate(-20px, 48px) scale(1.3);
   border-bottom-width: 5px;
   border-left-width: 5px;
 }
@@ -505,7 +513,23 @@ nav>ul>li>a:before {
 /* focus right (x,y) */
 
 #focus_click:hover:after {
-  transform: translate(10px, -15px) scale(1.5);
+  transform: translate(10px, -15px) scale(1.3);
+  border-top-width: 5px;
+  border-right-width: 5px;
+}
+
+/* focus click down*/
+
+#focus_click.click_down:before {
+  transform: translate(-12px, 40px) scale(1.5);
+  border: 0 solid #00ff4c;
+  border-bottom-width: 5px;
+  border-left-width: 5px;
+}
+
+#focus_click.click_down:after {
+  transform: translate(2px, -7px) scale(1.5);
+  border: 0 solid #00ff4c;
   border-top-width: 5px;
   border-right-width: 5px;
 }
@@ -924,8 +948,8 @@ nav>ul>li>a:before {
   letter-spacing: 2px;
   background: #252525;
   line-height: 50px;
-  border-bottom-right-radius: 18px;
-  border-bottom-left-radius: 18px;
+  /* border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 18px; */
 }
 
 /* -------------------------footer bottom----------------------- */
@@ -1122,11 +1146,11 @@ nav>ul>li>a:before {
 
 /*=================================== RWD ===================================*/
 
-/* -------------------------PC----------------------- */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<< PC >>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media screen and (min-width: 1409px) {}
 
-/* -------------------------PAD----------------------- */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<< PAD >>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* @media screen and (min-width: 768px) and (max-width: 1408px) { */
 
@@ -1156,7 +1180,7 @@ nav>ul>li>a:before {
   }
   /* ------------------ sup_bg ---------------- */
   .bg_sup_1 {
-    top: 55%;
+    /* top: 55%; */
   }
   .bg_sup_2 {
     bottom: -250px;
@@ -1169,8 +1193,8 @@ nav>ul>li>a:before {
   #main_bg {
     background-image: url(../images/bg/top_bg_pad.jpg);
     background-position: center bottom;
-    padding-top: 4%;
-    padding-bottom: 86%;
+    padding-top: 5%;
+    padding-bottom: 94%;
     background-attachment: fixed;
   }
   #top .main_bg_click {
@@ -1248,7 +1272,7 @@ nav>ul>li>a:before {
   }
 }
 
-/* -------------------------PHONE----------------------- */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<< PHONE >>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: 767px) {
   /* ------------------ font ---------------- */
@@ -1271,8 +1295,11 @@ nav>ul>li>a:before {
     font-size: 1rem;
   }
   /* ------------------ sup_bg ---------------- */
-  .bg_sup_1 {
-    top: 70%;
+  .bg_sup_1-1 {
+    bottom: 50px;
+  }
+  .bg_sup_1-2 {
+    top: -50px;
   }
   .bg_sup_2 {
     bottom: -10%;
@@ -1306,6 +1333,7 @@ nav>ul>li>a:before {
     background-position: 28% 65%;
     padding-top: 20%;
     padding-bottom: 145%;
+    background-attachment: fixed;
   }
   #focus_click {
     top: 35%;
