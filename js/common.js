@@ -316,21 +316,19 @@ $(function() {
     AOS.refresh();
   }
 
-  // -------------------SP NAV-------------------//
-  $(document).ready(function() {
-    $('.nav_btn a').click(function() {
-      $('.overlay').fadeToggle(200);
-      $(this)
-        .toggleClass('btn-open')
-        .toggleClass('btn-close');
-    });
-  });
-  // 任意一處click即關閉
-  $('.overlay').on('click', function() {
-    $('.overlay').fadeToggle(200);
-    $('.nav_btn a')
-      .toggleClass('btn-open')
-      .toggleClass('btn-close');
-    open = false;
-  });
+  // ------------------- AOS 調整-------------------//
+  if (window_width <= 767) {
+    // $(window).resize(function() {
+    //   if (
+    //     window_Width != $(window).width() ||
+    //     window_Height != $(window).height()
+    //   ) {
+    //     location.reload();
+    //     return;
+    //   }
+    // });
+
+    AOS.init({ disable: 'mobile' });
+    // AOS.refresh();
+  }
 });
