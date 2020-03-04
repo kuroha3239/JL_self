@@ -76,7 +76,6 @@ $(function() {
     } else {
       $('nav').removeClass('dropdown_fixed');
     }
-
     // -------------------NAV scrollspy-------------------//
     zone_1 = $('#about').offset().top - 60;
     zone_2 = $('#photo').offset().top - 60;
@@ -282,9 +281,10 @@ $(function() {
   AOS.init({
     duration: 800,
   });
+});
 
-  // =====================================RWD=====================================//
-
+// =====================================RWD=====================================//
+$(function() {
   var window_width = $(window).width();
   if (window_width <= 1280) {
     // ------------------- AOS 調整-------------------//
@@ -318,6 +318,11 @@ $(function() {
 
   // ------------------- AOS 調整-------------------//
   if (window_width <= 767) {
+    // location.reload();
+    // return;
+
+    // location.reload();
+    // return;
     // $(window).resize(function() {
     //   if (
     //     window_Width != $(window).width() ||
@@ -332,3 +337,10 @@ $(function() {
     // AOS.refresh();
   }
 });
+
+// $(function() {
+//   $(window).scroll(function() {
+//     var scrollVal = $(this).scrollTop();
+//     $('span.qScrollTop').text(scrollVal);
+//   });
+// });
