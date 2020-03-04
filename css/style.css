@@ -18,9 +18,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* -------------------------全域------------------------- */
 
-html {
+/* html {
   overflow-x: hidden;
-}
+} */
 
 body {
   font-family: "RBNo2Light", "微軟正黑體", "Microsoft JhengHei", sans-serif;
@@ -1239,6 +1239,9 @@ nav>ul>li>a:before {
 /* -------------------------PHONE----------------------- */
 
 @media (max-width: 767px) {
+  .top, .zone_1 {
+    height: auto;
+  }
   /* ------------------ font ---------------- */
   h1 {
     font-size: 4.5rem;
@@ -1334,3 +1337,12 @@ nav>ul>li>a:before {
 }
 
 /*---------------------NAV---------------------*/
+
+.gst {
+  position: fixed;
+  top: 15%;
+  left: 5%;
+  background: #fff;
+  z-index: 5000;
+  font-size: 3rem;
+}

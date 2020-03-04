@@ -317,30 +317,30 @@ $(function() {
   }
 
   // ------------------- AOS 調整-------------------//
-  if (window_width <= 767) {
-    // location.reload();
-    // return;
+  // if (window_width <= 767) {
+  // location.reload();
+  // return;
 
-    // location.reload();
-    // return;
-    // $(window).resize(function() {
-    //   if (
-    //     window_Width != $(window).width() ||
-    //     window_Height != $(window).height()
-    //   ) {
-    //     location.reload();
-    //     return;
-    //   }
-    // });
+  // location.reload();
+  // return;
+  // $(window).resize(function() {
+  //   if (
+  //     window_Width != $(window).width() ||
+  //     window_Height != $(window).height()
+  //   ) {
+  //     location.reload();
+  //     return;
+  //   }
+  // });
 
-    AOS.init({ disable: 'mobile' });
-    // AOS.refresh();
-  }
+  // AOS.init({ disable: 'mobile' });
+  // AOS.refresh();
+  // }
 });
 
-// $(function() {
-//   $(window).scroll(function() {
-//     var scrollVal = $(this).scrollTop();
-//     $('span.qScrollTop').text(scrollVal);
-//   });
-// });
+$(function() {
+  $(window).scroll(function() {
+    var scrollVal = $(this).scrollTop();
+    $('.qScrollTop').text(scrollVal);
+  });
+});
