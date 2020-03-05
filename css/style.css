@@ -1200,8 +1200,6 @@ nav>ul>li>a:before {
     background-size: inherit;
     background-repeat: no-repeat;
     background-color: #252525;
-    padding-bottom: 190%;
-    background-position: center;
     background-attachment: inherit;
   }
   /* #main_bg:after {
