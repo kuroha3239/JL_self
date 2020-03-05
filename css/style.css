@@ -1191,13 +1191,13 @@ nav>ul>li>a:before {
   }
   /* ------------------ TOP區 ---------------- */
   #main_bg {
-    background-image: url(../images/bg/top_bg_pad.jpg) no-repeat;
+    background-image: url(../images/bg/top_bg_pad.jpg);
     background-position: center bottom;
     padding-top: 1%;
     padding-bottom: 95%;
     background-size: cover;
   }
-  .ios_bg {
+  #top .ios_bg {
     background-size: contain; 
   }
   /* #main_bg:after {
