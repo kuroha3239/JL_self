@@ -1199,8 +1199,9 @@ nav>ul>li>a:before {
     padding-top: 1%;
     padding-bottom: 91%;
     background-attachment: fixed;
-    -webkit-background-size: fixed;
-    /* background-size: cover; */
+    -webkit-background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
     /* background-size: contain;
     background-size: 100%; */
   }
