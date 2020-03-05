@@ -1,4 +1,7 @@
 $(function() {
+  // -------------------preload img-------------------//
+  $.preload('images/bg/top_bgc_pc.jpg');
+
   // -------------------<a> slide-------------------//
   $('a[href*=#]').on('click', function(e) {
     e.preventDefault();
