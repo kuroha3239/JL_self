@@ -1197,7 +1197,7 @@ nav>ul>li>a:before {
     padding-bottom: 95%;
     background-size: cover;
   }
-  #ios_bg {
+  .ios_bg {
     background-size: contain; 
   }
   /* #main_bg:after {
