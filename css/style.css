@@ -1198,6 +1198,7 @@ nav>ul>li>a:before {
     padding-top: 1%;
     padding-bottom: 84%;
     background-attachment: fixed;
+    background-size: contain;
   }
   #top .main_bg_click {
     background-image: url(../images/bg/top_bgc_pad.jpg);
