@@ -414,11 +414,10 @@ nav>ul>li>a:before {
 }
 
 .bg_sup_4 {
-  width: 36%;
+  width: 40%;
   position: absolute;
   left: 0%;
-  top: -55%;
-  z-index: 10;
+  top: 75%;
 }
 
 .bg_sup_5 {
@@ -1198,8 +1197,10 @@ nav>ul>li>a:before {
     background-position: center bottom;
     padding-top: 1%;
     padding-bottom: 91%;
-    background-attachment: fixed;
-    -webkit-background-attachment: fixed;
+    /* background-attachment: fixed;
+    -webkit-background-attachment: fixed; */
+    background-attachment: scroll;
+    -webkit-background-attachment: scroll;
     background-size: cover;
     -webkit-background-size: cover;
     /* background-size: contain;
