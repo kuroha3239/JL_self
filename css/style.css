@@ -1265,6 +1265,9 @@ nav>ul>li>a:before {
     letter-spacing: 4px;
     width: 490px;
   }
+  #focus_click.click_down p::after {
+    height: 30px;
+  }
   #focus_click:hover:before {
     transform: translate(-30px, 30px) scale(1.3);
   }
@@ -1380,6 +1383,9 @@ nav>ul>li>a:before {
     margin: auto;
     background: #ffffff7a;
   }
+  #focus_click.click_down p::after {
+    height: 25px;
+  }
   #focus_click:hover:before {
     transform: translate(30px, 30px) scale(1);
   }
@@ -1443,7 +1449,7 @@ nav>ul>li>a:before {
     padding: 0 0 0 1%;
   }
   .final_click {
-    margin: 5% auto 15%;
+    margin: 8% auto 15%;
     padding: 10px;
   }
   #tk {
