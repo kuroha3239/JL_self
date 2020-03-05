@@ -1181,7 +1181,6 @@ nav>ul>li>a:before {
     font-size: 1.3rem;
   }
   /* ------------------ sup_bg ---------------- */
-
   .bg_sup_2 {
     bottom: -250px;
     width: 25%;
@@ -1198,7 +1197,9 @@ nav>ul>li>a:before {
     background-size: cover;
   }
   #top .ios_bg {
-    background-size: contain; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #252525;
   }
   /* #main_bg:after {
     content: "";
