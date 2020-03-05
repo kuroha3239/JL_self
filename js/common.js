@@ -356,7 +356,7 @@ $(function() {
   /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PHONE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   if (window_width <= 767) {
     // ------------------- 預載IMG-------------------//
-    $.preload('images/bg/top_bg_sp.jpg', 'images/bg/top_bgc_sp.jpg');
+    $.preload('images/bg/top_bgc_sp.jpg');
 
     // ------------------- AOS 調整-------------------//
     $('h3,#skill,#chart').attr({
