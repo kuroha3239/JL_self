@@ -1196,7 +1196,7 @@ nav>ul>li>a:before {
     background-image: url(../images/bg/top_bg_pad.jpg);
     background-position: left top;
     padding-top: 1%;
-    padding-bottom: 91%;
+    padding-bottom: 95%;
     /* background-attachment: fixed;
     -webkit-background-attachment: fixed; */
     background-attachment: scroll;
@@ -1211,12 +1211,12 @@ nav>ul>li>a:before {
   }
   #top_click {
     bottom: 8%;
-    /* padding-bottom: 0px; */
-    padding-bottom: 70px;
+    padding-bottom: 0px;
+    /* padding-bottom: 70px; */
   }
   #top_click span {
-    /* bottom: 175%; */
-    bottom: 5%;
+    bottom: 175%;
+    /* bottom: 5%; */
   }
   nav {
     bottom: 0%;

@@ -304,6 +304,7 @@ $(function() {
 $(function() {
   var window_width = $(window).width();
   if (window_width <= 1280) {
+    // ------------------- 解決IOS不支援bg fixed問題-------------------//
     $(window).scroll(function() {
       var scrolledY = $(window).scrollTop();
       $('#main_bg').css('background-position', 'left ' + scrolledY + 'px');
