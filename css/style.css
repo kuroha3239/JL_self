@@ -1193,21 +1193,16 @@ nav>ul>li>a:before {
   }
   /* ------------------ TOP區 ---------------- */
   #main_bg {
-    background-image: url(../images/bg/top_bg_pad.jpg);
+    background-image: url(../images/bg/top_bg_pad.jpg) no-repeat;
     background-position: center bottom;
     padding-top: 1%;
     padding-bottom: 95%;
-    /* background-attachment: fixed;
-    -webkit-background-attachment: fixed; */
-    /* background-position: left top; */
-    /* background-attachment: scroll;
-    -webkit-background-attachment: scroll; */
-    /* background-size: cover;
-    -webkit-background-size: cover; */
-    /* /* background-size: contain; */
-    /* background-size: 100%; */
+    background-size: cover;
   }
-  #main_bg:after {
+  #ios_bg {
+    background-size: contain; 
+  }
+  /* #main_bg:after {
     content: "";
     position: fixed;
     top: 0;
@@ -1220,8 +1215,8 @@ nav>ul>li>a:before {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /* background-attachment: fixed; */
-  }
+    background-attachment: fixed;
+  } */
   #top .main_bg_click {
     background-image: url(../images/bg/top_bgc_pad.jpg);
   }

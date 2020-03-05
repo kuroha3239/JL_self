@@ -310,8 +310,13 @@ $(function() {
     //   $('#main_bg').css('background-position', 'left ' + scrolledY + 'px');
     // });
 
+    // ------------------- 偵測 IOS-------------------//
+    var WhatSystem = navigator.userAgent;
+    if (WhatSystem.match(/(iphone|ipad);?/i)) {
+      $('#main_bg').addClass('ios_bg');
+    }
+
     // ------------------- AOS 調整-------------------//
-    // if (window_width <= 767) {
 
     AOS.init({
       duration: 500,
