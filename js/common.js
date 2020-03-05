@@ -17,7 +17,7 @@ $(function() {
   var window_width = $(window).width();
 
   if (window_width > 1281) {
-    $.preload('images/bg/top_bg_pc.jpg', 'images/bg/top_bgc_pc.jpg');
+    $.preload('images/bg/top_bgc_pc.jpg');
   }
   // -------------------<a> slide-------------------//
   $('a[href*=#]').on('click', function(e) {
@@ -163,18 +163,18 @@ $(function() {
 
     var over_bottom = $('#wrapper').outerHeight();
 
-    // if (window_width > 1281) {
-    // 螢幕寬大於1281px才執行
-    if (scroll_act + window_height + 1 > over_bottom) {
-      // setTimeout(function() {
-      $('body').addClass('footer_down');
-      $('#footer_bottom').show(500);
-      // }, 500);
-    } else {
-      $('body').removeClass('footer_down');
-      $('#footer_bottom').fadeOut(1000);
+    if (window_width > 1281) {
+      // 螢幕寬大於1281px才執行
+      if (scroll_act + window_height + 1 > over_bottom) {
+        // setTimeout(function() {
+        $('body').addClass('footer_down');
+        $('#footer_bottom').show(500);
+        // }, 500);
+      } else {
+        $('body').removeClass('footer_down');
+        $('#footer_bottom').fadeOut(1000);
+      }
     }
-    // }
   });
 
   // -------------------focus BTN_Click 停止 & 消失-------------------//
