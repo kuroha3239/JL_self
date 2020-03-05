@@ -1205,7 +1205,22 @@ nav>ul>li>a:before {
     /* background-size: cover;
     -webkit-background-size: cover; */
     /* /* background-size: contain; */
-    background-size: 100%;
+    /* background-size: 100%; */
+  }
+  #main_bg:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url(../images/bg/top_bg_pad.jpg) center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
   }
   #top .main_bg_click {
     background-image: url(../images/bg/top_bgc_pad.jpg);
@@ -1344,6 +1359,7 @@ nav>ul>li>a:before {
     padding-top: 20%;
     padding-bottom: 145%;
     background-attachment: fixed;
+    background-size: cover;
   }
   #focus_click {
     top: 35%;
