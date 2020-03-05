@@ -1,5 +1,19 @@
 $(function() {
   // -------------------preload img-------------------//
+  (function(a) {
+    a.preload = function() {
+      var d =
+        Object.prototype.toString.call(arguments[0]) === '[object Array]'
+          ? arguments[0]
+          : arguments;
+      var c = [];
+      var b = d.length;
+      for (; b--; ) {
+        c.push(a('<img />').attr('src', d[b]));
+      }
+    };
+  })(jQuery);
+
   $.preload('images/bg/top_bgc_pc.jpg');
 
   // -------------------<a> slide-------------------//
