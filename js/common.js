@@ -14,7 +14,7 @@ $(function() {
     };
   })(jQuery);
 
-  $.preload('images/bg/top_bgc_pc.jpg');
+  $.preload('images/bg/top_bg_pc.jpg,images/bg/top_bgc_pc.jpg');
 
   // -------------------<a> slide-------------------//
   $('a[href*=#]').on('click', function(e) {
@@ -304,6 +304,9 @@ $(function() {
 // =====================================RWD=====================================//
 $(function() {
   var window_width = $(window).width();
+
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PAD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
   if (window_width <= 1280) {
     // ------------------- 解決IOS不支援bg fixed問題-------------------//
     // $(window).scroll(function() {
@@ -316,6 +319,9 @@ $(function() {
     if (WhatSystem.match(/(iphone|ipad);?/i)) {
       $('#main_bg').addClass('ios_bg');
     }
+
+    // ------------------- 預載IMG-------------------//
+    $.preload('images/bg/top_bgc_pad.jpg');
 
     // ------------------- AOS 調整-------------------//
 
@@ -345,8 +351,12 @@ $(function() {
     AOS.refresh();
   }
 
-  // ------------------- AOS 調整-------------------//
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PHONE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   if (window_width <= 767) {
+    // ------------------- 預載IMG-------------------//
+    $.preload('images/bg/top_bg_sp.jpg,images/bg/top_bgc_sp.jpg');
+
+    // ------------------- AOS 調整-------------------//
     $('h3,#skill,#chart').attr({
       'data-aos': 'fade-up',
       // 'data-aos-offset': '800',
