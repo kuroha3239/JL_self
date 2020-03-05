@@ -1197,9 +1197,11 @@ nav>ul>li>a:before {
     background-size: cover;
   }
   #top .ios_bg {
-    background-size: contain;
+    background-size: inherit;
     background-repeat: no-repeat;
     background-color: #252525;
+    padding-bottom: 190%;
+    background-position: center;
   }
   /* #main_bg:after {
     content: "";
