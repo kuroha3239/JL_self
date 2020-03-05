@@ -304,6 +304,11 @@ $(function() {
 $(function() {
   var window_width = $(window).width();
   if (window_width <= 1280) {
+    $(window).scroll(function() {
+      var scrolledY = $(window).scrollTop();
+      $('#main_bg').css('background-position', 'left ' + scrolledY + 'px');
+    });
+
     // ------------------- AOS 調整-------------------//
     // if (window_width <= 767) {
 
