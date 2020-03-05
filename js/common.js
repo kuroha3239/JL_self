@@ -162,11 +162,12 @@ $(function() {
     var over_bottom = $('#wrapper').outerHeight();
 
     if (window_width > 1281) {
+      // 螢幕寬大於1281px才執行
       if (scroll_act + window_height + 1 > over_bottom) {
-        setTimeout(function() {
-          $('body').addClass('footer_down');
-          $('#footer_bottom').show(500);
-        }, 500);
+        // setTimeout(function() {
+        $('body').addClass('footer_down');
+        $('#footer_bottom').show(500);
+        // }, 500);
       } else {
         $('body').removeClass('footer_down');
         $('#footer_bottom').fadeOut(1000);
@@ -192,12 +193,12 @@ $(function() {
 
   // 1.5秒後再下滑
   $('#focus_click').click(function() {
-    // 快門鎖定改紅色
+    // 快門鎖定改紅色 & 加上提示文字
     $(this).addClass('click_down');
 
     setTimeout(function() {
       $('html,body').animate({ scrollTop: $('#photo').offset().top }, 1200);
-    }, 1500);
+    }, 2000);
   });
 
   // fliter的click
