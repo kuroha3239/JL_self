@@ -1181,9 +1181,7 @@ nav>ul>li>a:before {
     font-size: 1.3rem;
   }
   /* ------------------ sup_bg ---------------- */
-  .bg_sup_1 {
-    /* top: 55%; */
-  }
+
   .bg_sup_2 {
     bottom: -250px;
     width: 25%;
