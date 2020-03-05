@@ -1197,12 +1197,12 @@ nav>ul>li>a:before {
     background-size: cover;
   }
   #top .ios_bg {
-    background-image: url(../images/bg/top_bg_pad.jpg);
     background-size: inherit;
     background-repeat: no-repeat;
-    background-color: #fff;
+    background-color: #252525;
     padding-bottom: 190%;
     background-position: center;
+    background-attachment: inherit;
   }
   /* #main_bg:after {
     content: "";
