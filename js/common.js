@@ -14,8 +14,10 @@ $(function() {
     };
   })(jQuery);
 
+  var window_width = $(window).width();
+
   if (window_width > 1281) {
-    $.preload('images/bg/top_bg_pc.jpg,images/bg/top_bgc_pc.jpg');
+    $.preload('images/bg/top_bg_pc.jpg', 'images/bg/top_bgc_pc.jpg');
   }
   // -------------------<a> slide-------------------//
   $('a[href*=#]').on('click', function(e) {
@@ -156,7 +158,6 @@ $(function() {
     // }
 
     // -------------------加上footer bottom-------------------//
-    var window_width = $(window).width();
 
     var window_height = $(window).height();
 
@@ -355,7 +356,7 @@ $(function() {
   /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PHONE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   if (window_width <= 767) {
     // ------------------- 預載IMG-------------------//
-    $.preload('images/bg/top_bg_sp.jpg,images/bg/top_bgc_sp.jpg');
+    $.preload('images/bg/top_bg_sp.jpg', 'images/bg/top_bgc_sp.jpg');
 
     // ------------------- AOS 調整-------------------//
     $('h3,#skill,#chart').attr({
