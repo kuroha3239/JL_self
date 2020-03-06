@@ -70,10 +70,184 @@ button {
   position: relative;
 }
 
-/* -------------------------SP NAV----------------------- */
+/* -------------------------Loading----------------------- */
 
-.sp_nav {
-  display: none;
+.mix_load {
+  display: block;
+  height: 100%;
+  background: radial-gradient(circle farthest-corner at center, #252525 0%, #000 100%);
+  transition: all 1s ease-in-out;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.over {
+  animation: load_over 1.5s linear 1;
+}
+
+@keyframes load_over {
+  0% {
+    background: radial-gradient(circle farthest-corner at center, #252525 0%, #000 100%)
+  }
+  90% {
+    background: radial-gradient(circle farthest-corner at center, #252525 0%, #000 100%);
+  }
+  100% {
+    background: #fff
+  }
+}
+
+.loader {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  perspective: 800px;
+}
+
+.inner {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.inner.one {
+  left: 0%;
+  top: 0%;
+  animation: rotate-one 1s linear infinite;
+  border-bottom: 3px solid #174887;
+}
+
+.inner.two {
+  right: 0%;
+  top: 0%;
+  animation: rotate-two 1s linear infinite;
+  border-right: 3px solid #FFF;
+}
+
+.inner.three {
+  right: 0%;
+  bottom: 0%;
+  animation: rotate-three 1s linear infinite;
+  border-top: 3px solid #174887;
+}
+
+@keyframes rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%
+}
+
+.loading .loading_line {
+  position: relative;
+  top: 50%;
+  width: 0%;
+  height: 1px;
+  margin: 0 auto;
+  border-top: 2px solid #252525;
+  z-index: 10000;
+}
+
+.loading .loading_bg {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+}
+
+.loading .loading_bg:after, .loading .loading_bg:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.loading .loading_bg:after {
+  top: 0
+}
+
+.loading .loading_bg:before {
+  bottom: 0
+}
+
+.loading.loading_open .loading_bg:after, .loading.loading_open .loading_bg:before {
+  animation: loading_open 1.5s ease-in-out forwards
+}
+
+.loading.loading_open .loading_line {
+  animation: loading_line 1.125s ease-in-out forwards
+}
+
+@keyframes loading_open {
+  0% {
+    height: 50%;
+  }
+  75% {
+    height: 50%;
+    background-color: #000;
+    border-top: 2px solid #252525
+  }
+  90% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    height: 0%;
+  }
+}
+
+@keyframes loading_line {
+  0% {
+    width: 0%
+  }
+  50% {
+    width: 0%
+  }
+  99% {
+    width: 100%;
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* -------------------------TOP區----------------------- */
@@ -265,6 +439,10 @@ h5 {
   }
 }
 
+#top_click span[data-aos][data-aos-delay='6000'] {
+  transition-delay: 6s;
+}
+
 /* click + shine 換 top_bg*/
 
 .shine {
@@ -380,6 +558,10 @@ nav>ul>li>a:before {
   box-shadow: 0px 5px 8px #979797;
   padding: 1px 0;
   background-color: #252525fc;
+}
+
+nav[data-aos][data-aos-delay='4500'] {
+  transition-delay: 4.5s;
 }
 
 /* ------------bg_support------------- */
@@ -1449,7 +1631,7 @@ nav>ul>li>a:before {
     padding: 0 0 0 1%;
   }
   .final_click {
-    margin: 8% auto 15%;
+    margin: 10% auto 15%;
     padding: 10px;
   }
   #tk {

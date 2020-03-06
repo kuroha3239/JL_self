@@ -1,14 +1,14 @@
-$(function() {
+$(function () {
   // -------------------preload img-------------------//
-  (function(a) {
-    a.preload = function() {
+  (function (a) {
+    a.preload = function () {
       var d =
         Object.prototype.toString.call(arguments[0]) === '[object Array]'
           ? arguments[0]
           : arguments;
       var c = [];
       var b = d.length;
-      for (; b--; ) {
+      for (; b--;) {
         c.push(a('<img />').attr('src', d[b]));
       }
     };
@@ -18,9 +18,12 @@ $(function() {
 
   if (window_width > 1281) {
     $.preload('images/bg/top_bgc_pc.jpg');
+
+    // ------------------- AOS 調整-------------------//
+
   }
   // -------------------<a> slide-------------------//
-  $('a[href*=#]').on('click', function(e) {
+  $('a[href*=#]').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate(
       { scrollTop: $($(this).attr('href')).offset().top },
@@ -30,20 +33,20 @@ $(function() {
   });
 
   // -------------------top click show-------------------//
-  setTimeout(function() {
+  setTimeout(function () {
     $('#top_click').css('opacity', '1');
-  }, 2900);
+  }, 6300);
 
   // -------------------top click change bg-------------------//
-  $('#top_click').click(function() {
+  $('#top_click').click(function () {
     $('#main_bg').addClass('shine');
 
-    setTimeout(function() {
+    setTimeout(function () {
       $('#main_bg').addClass('main_bg_click');
       $('h4').text('用一張張的照片，紀錄下我的生活');
     }, 150);
 
-    setTimeout(function() {
+    setTimeout(function () {
       $('html,body').animate({ scrollTop: $('#about').offset().top }, 1200);
     }, 2500);
 
@@ -53,13 +56,13 @@ $(function() {
 
   // -------------------NAV-------------------//
   $('#logo').hover(
-    function() {
+    function () {
       $(this)
         .css('background', '#174887')
         .find('img')
         .attr('src', 'images/logo/jl_logo_w.png');
     },
-    function() {
+    function () {
       $(this)
         .css('background', 'transparent')
         .find('img')
@@ -70,10 +73,10 @@ $(function() {
     .not(':first-child')
     // .slice(1)
     .hover(
-      function() {
+      function () {
         $(this).addClass('nav_act');
       },
-      function() {
+      function () {
         $(this).removeClass('nav_act');
       }
     );
@@ -84,7 +87,7 @@ $(function() {
   // );
 
   // -----------------------------------Scroll-----------------------------------//
-  $(window).on('scroll', function() {
+  $(window).on('scroll', function () {
     // $(window).scroll(function () {
 
     var scroll_act = $(window).scrollTop();
@@ -181,12 +184,12 @@ $(function() {
 
   // focus的click
   $('#focus_click').hover(
-    function() {
+    function () {
       $(this)
         .find('img')
         .css('animation', '0s');
     },
-    function() {
+    function () {
       $(this)
         .find('img')
         .attr('animation', 'btn_click 1.5s infinite');
@@ -194,17 +197,17 @@ $(function() {
   );
 
   // 1.5秒後再下滑
-  $('#focus_click').click(function() {
+  $('#focus_click').click(function () {
     // 快門鎖定改紅色 & 加上提示文字
     $(this).addClass('click_down');
 
-    setTimeout(function() {
+    setTimeout(function () {
       $('html,body').animate({ scrollTop: $('#photo').offset().top }, 1200);
     }, 2000);
   });
 
   // fliter的click
-  $('.select_btn button').hover(function() {
+  $('.select_btn button').hover(function () {
     // $(".point img").css("display", "none");
     $('.point img').hide();
   });
@@ -212,11 +215,16 @@ $(function() {
   // -------------------circle & photo filter-------------------//
   var $photo_selects = $('#photo_selects').isotope({});
 
-  $('#filters').on('click', 'button', function() {
+  $('#filters').on('click', 'button', function () {
     $('#photo_selects').addClass('open');
 
-    setTimeout(function() {
+    setTimeout(function () {
+      // 刷彩色
       $('.case_card').css('filter', 'grayscale(0)');
+      // 微下滑
+      setTimeout(function () {
+        $('html,body').animate({ scrollTop: $('#filters').offset().top - 100 }, 1200);
+      }, 2000);
     }, 200);
 
     var filterValue = $(this).attr('data-filter');
@@ -237,12 +245,12 @@ $(function() {
     async: false, //是否異步加載文件。
   });
   $('#photo_selects a').hover(
-    function() {
+    function () {
       $(this)
         .parent()
         .css('box-shadow', '1px 1px 8px #47474c');
     },
-    function() {
+    function () {
       $(this)
         .parent()
         .css('box-shadow', '0');
@@ -259,7 +267,7 @@ $(function() {
 
   // -------------------graphic hover-------------------//
   $('.inframe').hover(
-    function() {
+    function () {
       // 其他
       $('.inframe')
         .parent()
@@ -273,7 +281,7 @@ $(function() {
           filter: 'blur(0)',
         });
     },
-    function() {
+    function () {
       $('.inframe')
         .parent()
         .css({ filter: 'grayscale(70%)', filter: 'blur(0)' });
@@ -285,14 +293,14 @@ $(function() {
 
   // -------------------Final Click-------------------//
 
-  $('#final_click').click(function() {
+  $('#final_click').click(function () {
     $('.final_sec')
       .addClass('flip')
       .fadeOut(1000);
     $('#tk').fadeIn(2500);
 
     // 改變gotop的目標
-    $('#gotop').click(function() {
+    $('#gotop').click(function () {
       $('html,body').animate({ scrollTop: $('body').offset().top }, 1000);
     });
   });
@@ -304,7 +312,7 @@ $(function() {
 });
 
 // =====================================RWD=====================================//
-$(function() {
+$(function () {
   var window_width = $(window).width();
 
   /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PAD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -402,3 +410,20 @@ window.onload = () => {
 //     $('.qScrollTop').text(scrollVal);
 //   });
 // });
+
+// < !------------------------- Loading------------------------>
+
+// window.onload = function () {
+$(window).on('load', function () {
+
+  $("#run").fadeOut(1500, function () {
+    $('.loading').addClass('loading_open');
+
+    // setTimeout(function () {
+    // $('#mix_load').fadeOut(1500);
+    $('#mix_load').addClass('over').fadeOut(1500);
+    // }, 500);
+  });
+  // setTimeout(function () { $('.loading').remove(); }, loading_timeout);
+
+});
