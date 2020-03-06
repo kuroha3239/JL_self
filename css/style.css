@@ -1630,12 +1630,7 @@ nav>ul>li>a:before {
     height: 250px;
     background-image: url(../images/bg/bg_3_5_sp.jpg);
     background-position: top right;
-    background-attachment: inherit;
   }
-  /* .zone_3_5::before {
-    height: 200px;
-    content: "";
-  } */
   /* -------------section_4區 (web)----------- */
   .zone_4 {
     padding-top: 25%;
@@ -1654,8 +1649,14 @@ nav>ul>li>a:before {
   /* -------------section_4_5區 (bg_fix)----------- */
   .zone_4_5 {
     height: 350px;
-    background-image: url(../images/bg/bg_4_5_sp.jpg);
-    background-position: center top;
+    /* background-image: url(../images/bg/bg_4_5_sp.jpg);
+    background-position: center top; */
+    background: url(../images/bg/bg_4_5_sp.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
   }
   /* -------------footer_bottom----------- */
   #footer_bottom {
