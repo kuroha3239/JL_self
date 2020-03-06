@@ -63,6 +63,22 @@ button {
   background: none;
 }
 
+/* -------------------------AOS 延遲秒數----------------------- */
+
+h1[data-aos][data-aos-delay='3000'], h4[data-aos][data-aos-delay='3000'], .bg_sup_1-1[data-aos][data-aos-delay='3000'], .bg_sup_1-2[data-aos][data-aos-delay='3000'] {
+  transition-delay: 3.5s;
+}
+
+nav[data-aos][data-aos-delay='5000'] {
+  transition-delay: 5s;
+}
+
+/* 配合JS的top click show */
+
+#top_click span[data-aos][data-aos-delay='6500'] {
+  transition-delay: 6.5s;
+}
+
 /* -------------------------各區共用----------------------- */
 
 .top, .zone_1 {
@@ -439,10 +455,6 @@ h5 {
   }
 }
 
-#top_click span[data-aos][data-aos-delay='6000'] {
-  transition-delay: 6s;
-}
-
 /* click + shine 換 top_bg*/
 
 .shine {
@@ -558,10 +570,6 @@ nav>ul>li>a:before {
   box-shadow: 0px 5px 8px #979797;
   padding: 1px 0;
   background-color: #252525fc;
-}
-
-nav[data-aos][data-aos-delay='4500'] {
-  transition-delay: 4.5s;
 }
 
 /* ------------bg_support------------- */

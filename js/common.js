@@ -35,7 +35,7 @@ $(function () {
   // -------------------top click show-------------------//
   setTimeout(function () {
     $('#top_click').css('opacity', '1');
-  }, 6300);
+  }, 6800);
 
   // -------------------top click change bg-------------------//
   $('#top_click').click(function () {
