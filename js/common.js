@@ -417,13 +417,13 @@ window.onload = () => {
 $(window).on('load', function () {
 
   $("#run").fadeOut(1500, function () {
-    $('.loading').addClass('loading_open');
+    $('#loading').addClass('loading_open');
 
     // setTimeout(function () {
     // $('#mix_load').fadeOut(1500);
     $('#mix_load').addClass('over').fadeOut(1500);
     // }, 500);
   });
-  // setTimeout(function () { $('.loading').remove(); }, loading_timeout);
+  setTimeout(function () { $('#mix_load').remove(); }, 5000);
 
 });
