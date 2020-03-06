@@ -1630,7 +1630,12 @@ nav>ul>li>a:before {
     height: 250px;
     background-image: url(../images/bg/bg_3_5_sp.jpg);
     background-position: top right;
+    background-attachment: inherit;
   }
+  /* .zone_3_5::before {
+    height: 200px;
+    content: "";
+  } */
   /* -------------section_4區 (web)----------- */
   .zone_4 {
     padding-top: 25%;

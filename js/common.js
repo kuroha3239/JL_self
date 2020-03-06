@@ -213,19 +213,29 @@ $(function () {
   });
 
   // -------------------circle & photo filter-------------------//
+  var one_time = true;
   var $photo_selects = $('#photo_selects').isotope({});
 
   $('#filters').on('click', 'button', function () {
     $('#photo_selects').addClass('open');
 
-    setTimeout(function () {
-      // 刷彩色
-      $('.case_card').css('filter', 'grayscale(0)');
+    if (one_time == true) {
+
+      // console.log(one_time);
+
+      setTimeout(function () {
+        // 刷彩色
+        $('.case_card').css('filter', 'grayscale(0)');
+      }, 200);
       // 微下滑
       setTimeout(function () {
         $('html,body').animate({ scrollTop: $('#filters').offset().top - 100 }, 1200);
       }, 2000);
-    }, 200);
+      one_time = false;
+
+      // console.log(one_time);
+    }
+
 
     var filterValue = $(this).attr('data-filter');
     $photo_selects.isotope({
@@ -427,3 +437,4 @@ $(window).on('load', function () {
   setTimeout(function () { $('#mix_load').remove(); }, 5000);
 
 });
+
