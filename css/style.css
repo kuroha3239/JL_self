@@ -1618,7 +1618,8 @@ nav>ul>li>a:before {
     background-attachment: scroll;
   }
   #zone_bg_fix .ios_bg {
-    background-attachment: inherit;
+    /* background-attachment: inherit; */
+    background-size: inherit;
   }
   /* -------------section_4區 (web)----------- */
   .zone_4 {
