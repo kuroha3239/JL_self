@@ -995,7 +995,7 @@ nav>ul>li>a:before {
 
 /* -------------------------BG_FIXED----------------------- */
 
-.zone_bg_fix {
+#zone_bg_fix {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1426,21 +1426,6 @@ nav>ul>li>a:before {
     background-color: #252525;
     background-attachment: inherit;
   }
-  /* #main_bg:after {
-    content: "";
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    background: url(../images/bg/top_bg_pad.jpg) center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-  } */
   #top .main_bg_click {
     background-image: url(../images/bg/top_bgc_pad.jpg);
   }
@@ -1631,6 +1616,9 @@ nav>ul>li>a:before {
     height: 250px;
     background-image: url(../images/bg/bg_3_5_sp.jpg);
     background-attachment: scroll;
+  }
+  #zone_bg_fix .ios_bg {
+    background-attachment: inherit;
   }
   /* -------------section_4區 (web)----------- */
   .zone_4 {

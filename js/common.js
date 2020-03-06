@@ -337,7 +337,7 @@ $(function () {
     // ------------------- 偵測 IOS-------------------//
     var WhatSystem = navigator.userAgent;
     if (WhatSystem.match(/(iphone|ipad);?/i)) {
-      $('#main_bg').addClass('ios_bg');
+      $('#main_bg,#zone_bg_fix').addClass('ios_bg');
     }
 
     // ------------------- 預載IMG-------------------//
@@ -421,7 +421,7 @@ window.onload = () => {
 //   });
 // });
 
-// < !------------------------- Loading------------------------>
+// ------------------------- Loading------------------------//
 
 // window.onload = function () {
 $(window).on('load', function () {
@@ -438,6 +438,7 @@ $(window).on('load', function () {
 
 });
 
+// ------------------------- stellar scroll------------------------//
 $(window).stellar({
   responsive: true,
   positionProperty: 'position',
