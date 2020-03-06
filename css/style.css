@@ -65,11 +65,11 @@ button {
 
 /* -------------------------AOS 延遲秒數----------------------- */
 
-h1[data-aos][data-aos-delay='3000'], h4[data-aos][data-aos-delay='3000'], .bg_sup_1-1[data-aos][data-aos-delay='3000'], .bg_sup_1-2[data-aos][data-aos-delay='3000'] {
-  transition-delay: 3.5s;
+h1[data-aos][data-aos][data-aos-delay='3000'], h4[data-aos][data-aos][data-aos-delay='3000'], .bg_sup_1-1[data-aos][data-aos][data-aos-delay='3000'], .bg_sup_1-2[data-aos][data-aos][data-aos-delay='3000'] {
+  transition-delay: 3.2s;
 }
 
-nav[data-aos][data-aos-delay='5000'] {
+nav[data-aos][data-aos][data-aos-delay='5000'] {
   transition-delay: 5s;
 }
 
