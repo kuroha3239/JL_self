@@ -997,8 +997,9 @@ nav>ul>li>a:before {
 
 .zone_bg_fix {
   background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin-top: 10%;
 }
 
@@ -1629,7 +1630,7 @@ nav>ul>li>a:before {
   .zone_3_5 {
     height: 250px;
     background-image: url(../images/bg/bg_3_5_sp.jpg);
-    background-position: top right;
+    background-attachment: scroll;
   }
   /* -------------section_4區 (web)----------- */
   .zone_4 {
@@ -1649,14 +1650,9 @@ nav>ul>li>a:before {
   /* -------------section_4_5區 (bg_fix)----------- */
   .zone_4_5 {
     height: 350px;
-    /* background-image: url(../images/bg/bg_4_5_sp.jpg);
-    background-position: center top; */
-    background: url(../images/bg/bg_4_5_sp.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow: hidden;
+    background-image: url(../images/bg/bg_4_5_sp.jpg);
+    background-position: center top;
+    background-attachment: scroll;
   }
   /* -------------footer_bottom----------- */
   #footer_bottom {
