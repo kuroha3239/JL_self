@@ -322,7 +322,7 @@ $(function () {
     if (WhatSystem.match(/(iphone|ipad);?/i)) {
       $('#main_bg').addClass('ios_bg');
       // $('#main_bg,#zone_bg_fix').addClass('ios_bg');
-      $('#zone_bg_fix').hide();
+      $('.zone_bg_fix').hide();
     }
 
     // ------------------- 預載IMG-------------------//

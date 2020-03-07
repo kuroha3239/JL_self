@@ -944,7 +944,7 @@ nav>ul>li>a:before {
 
 /* -------------------------BG_FIXED----------------------- */
 
-#zone_bg_fix {
+.zone_bg_fix {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -1432,10 +1432,10 @@ nav>ul>li>a:before {
     padding-top: 10%;
   }
   /* -------------bg_fix_3-5區 ----------- */
-  #zone_bg_fix {
+  .zone_bg_fix {
     background-size: contain;
   }
-  #zone_bg_fix .ios_bg {
+  .zone_bg_fix .ios_bg {
     display: none;
   }
   .zone_3_5 {
