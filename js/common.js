@@ -230,7 +230,7 @@ $(function () {
       // 微下滑
       setTimeout(function () {
         $('html,body').animate({ scrollTop: $('#filters').offset().top - 100 }, 1200);
-      }, 2000);
+      }, 1000);
       one_time = false;
 
       // console.log(one_time);
@@ -337,8 +337,8 @@ $(function () {
     // ------------------- 偵測 IOS-------------------//
     var WhatSystem = navigator.userAgent;
     if (WhatSystem.match(/(iphone|ipad);?/i)) {
-      $('#main_bg').addClass('ios_bg');
-      // $('#main_bg,#zone_bg_fix').addClass('ios_bg');
+      // $('#main_bg').addClass('ios_bg');
+      $('#main_bg,#zone_bg_fix').addClass('ios_bg');
     }
 
     // ------------------- 預載IMG-------------------//
@@ -376,6 +376,24 @@ $(function () {
   if (window_width <= 767) {
     // ------------------- 預載IMG-------------------//
     $.preload('images/bg/top_bgc_sp.jpg');
+
+    // -------------------graphic hover 拿掉blur-------------------//
+    $('.inframe').hover(
+      function () {
+        // 其他
+        $('.inframe')
+          .parent()
+          .css({ filter: 'grayscale(0%)', filter: 'blur(0)' });
+      },
+      // function () {
+      //   $('.inframe')
+      //     .parent()
+      //     .css({ filter: 'grayscale(0%)', filter: 'blur(0)' });
+      //   $(this)
+      //     .parent()
+      //     .css('z-index', '100');
+      // }
+    );
 
     // ------------------- AOS 調整-------------------//
     $('h3,#skill,#chart').attr({
