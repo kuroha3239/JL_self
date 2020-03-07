@@ -1481,6 +1481,10 @@ nav>ul>li>a:before {
   .zone_3 {
     padding-top: 15%;
   }
+  /* -------------bg_fix_3-5區 ----------- */
+  #zone_bg_fix {
+    display: none;
+  }
   /* -------------section_4區 (web)----------- */
   .zone_4 {
     padding-top: 15%;
@@ -1616,10 +1620,12 @@ nav>ul>li>a:before {
     height: 250px;
     background-image: url(../images/bg/bg_3_5_sp.jpg);
     background-attachment: scroll;
+    display: none;
   }
   #zone_bg_fix .ios_bg {
-    background-attachment: inherit;
-    background-size: inherit;
+    /* background-attachment: inherit;
+    background-size: inherit; */
+    display: none;
   }
   /* -------------section_4區 (web)----------- */
   .zone_4 {

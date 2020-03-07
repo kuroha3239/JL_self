@@ -337,7 +337,8 @@ $(function () {
     // ------------------- 偵測 IOS-------------------//
     var WhatSystem = navigator.userAgent;
     if (WhatSystem.match(/(iphone|ipad);?/i)) {
-      $('#main_bg,#zone_bg_fix').addClass('ios_bg');
+      $('#main_bg').addClass('ios_bg');
+      // $('#main_bg,#zone_bg_fix').addClass('ios_bg');
     }
 
     // ------------------- 預載IMG-------------------//
