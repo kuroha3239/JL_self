@@ -194,7 +194,7 @@ $(function () {
   });
 
   // fliter的click
-  $('.select_btn button').hover(function () {
+  $('.select_btn button').click(function () {
     // $(".point img").css("display", "none");
     $('.point img').hide();
   });
