@@ -80,11 +80,6 @@ $(function () {
         $(this).removeClass('nav_act');
       }
     );
-  // $("nav ul li").hover(
-  //   function () {
-  //     if ($(this).hasClass('nav_act')) return;
-  //   }
-  // );
 
   // -----------------------------------Scroll-----------------------------------//
   $(window).on('scroll', function () {
@@ -151,14 +146,6 @@ $(function () {
     } else {
       $('#gotop').fadeOut();
     }
-
-    // -------------------gotop 變白-------------------//
-    // footer = $('#footer').offset().top - 900;
-    // if (scroll_act >= footer) {
-    //   $('.arrow').addClass('bottom');
-    // } else {
-    //   $('.arrow').removeClass('bottom');
-    // }
 
     // -------------------加上footer bottom-------------------//
 
@@ -329,17 +316,13 @@ $(function () {
   /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PAD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
   if (window_width <= 1280) {
-    // ------------------- 解決IOS不支援bg fixed問題-------------------//
-    // $(window).scroll(function() {
-    //   var scrolledY = $(window).scrollTop();
-    //   $('#main_bg').css('background-position', 'left ' + scrolledY + 'px');
-    // });
 
     // ------------------- 偵測 IOS-------------------//
     var WhatSystem = navigator.userAgent;
     if (WhatSystem.match(/(iphone|ipad);?/i)) {
-      // $('#main_bg').addClass('ios_bg');
-      $('#main_bg,#zone_bg_fix').addClass('ios_bg');
+      $('#main_bg').addClass('ios_bg');
+      // $('#main_bg,#zone_bg_fix').addClass('ios_bg');
+      $('#zone_bg_fix').hide();
     }
 
     // ------------------- 預載IMG-------------------//
@@ -355,15 +338,10 @@ $(function () {
       'data-aos': '',
     });
     $('#top_click span').attr({
-      // 'data-aos-offset': '100',
       'data-aos-anchor-placement': 'top-bottom',
-      // 'data-aos-delay': '0',
     });
     $('h3,#skill,#chart').attr({
       'data-aos': '',
-      // 'data-aos-offset': '800',
-      // 'data-aos-anchor-placement': 'bottom-bottom',
-      // 'data-aos-delay': '0',
     });
     $('#final_click').attr({
       'data-aos': '',
@@ -385,15 +363,7 @@ $(function () {
         $('.inframe')
           .parent()
           .css({ filter: 'grayscale(0%)', filter: 'blur(0)' });
-      },
-      // function () {
-      //   $('.inframe')
-      //     .parent()
-      //     .css({ filter: 'grayscale(0%)', filter: 'blur(0)' });
-      //   $(this)
-      //     .parent()
-      //     .css('z-index', '100');
-      // }
+      }
     );
 
     // ------------------- AOS 調整-------------------//
@@ -407,6 +377,7 @@ $(function () {
     AOS.refresh();
   }
 });
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< OTHER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 // ------------------- ios 縮放 雙擊放大事件-------------------//
 window.onload = () => {
@@ -433,13 +404,6 @@ window.onload = () => {
     false
   );
 };
-// ------------------- 當前 scrolltop 數值-------------------//
-// $(function() {
-//   $(window).scroll(function() {
-//     var scrollVal = $(this).scrollTop();
-//     $('.qScrollTop').text(scrollVal);
-//   });
-// });
 
 // ------------------------- Loading------------------------//
 
@@ -456,12 +420,4 @@ $(window).on('load', function () {
   });
   setTimeout(function () { $('#mix_load').remove(); }, 5000);
 
-});
-
-// ------------------------- stellar scroll------------------------//
-$(window).stellar({
-  responsive: true,
-  positionProperty: 'position',
-  horizontalScrolling: false,
-  verticalOffset: 50
 });
