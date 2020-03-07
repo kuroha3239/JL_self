@@ -996,21 +996,22 @@ nav>ul>li>a:before {
 /* -------------------------BG_FIXED----------------------- */
 
 #zone_bg_fix {
-  background-position: center center;
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   margin-top: 10%;
 }
 
 .zone_3_5 {
   height: 300px;
   background-image: url(../images/bg/bg_3_5.jpg);
+  background-position: center center;
 }
 
 .zone_4_5 {
   height: 450px;
   background-image: url(../images/bg/bg_4_5.jpg);
+  background-position: center center;
 }
 
 /* -------------------------section_3區 (graphic)----------------------- */
@@ -1182,7 +1183,7 @@ nav>ul>li>a:before {
 #footer_bottom {
   width: 90%;
   /* max-width: 1440px; */
-  margin: 3% auto 5%;
+  margin: 5% auto 6%;
   text-align: center;
   height: 450px;
   position: relative;
@@ -1475,15 +1476,22 @@ nav>ul>li>a:before {
   }
   /* -------------section_2區 (photo)----------- */
   .zone_2 {
-    padding-top: 15%;
+    padding-top: 10%;
   }
   /* -------------section_3區 (graphic)----------- */
   .zone_3 {
-    padding-top: 15%;
+    padding-top: 10%;
   }
   /* -------------bg_fix_3-5區 ----------- */
   #zone_bg_fix {
+    background-size: contain;
+  }
+  #zone_bg_fix .ios_bg {
     display: none;
+  }
+  .zone_3_5 {
+    background-image: url(../images/bg/bg_3_5_s.jpg);
+    background-position: center right;
   }
   /* -------------section_4區 (web)----------- */
   .zone_4 {
@@ -1492,6 +1500,7 @@ nav>ul>li>a:before {
   .content {
     width: 30%;
   }
+  /* -------------bg_fix_4-5區 ----------- */
   /* -------------footer_bottom----------- */
   #footer_bottom {
     display: block;
@@ -1617,15 +1626,9 @@ nav>ul>li>a:before {
   }
   /* -------------section_3_5區 (bg_fix)----------- */
   .zone_3_5 {
-    height: 250px;
+    height: 200px;
     background-image: url(../images/bg/bg_3_5_sp.jpg);
-    background-attachment: scroll;
-    display: none;
-  }
-  #zone_bg_fix .ios_bg {
-    /* background-attachment: inherit;
-    background-size: inherit; */
-    display: none;
+    background-position: center right;
   }
   /* -------------section_4區 (web)----------- */
   .zone_4 {
@@ -1644,10 +1647,8 @@ nav>ul>li>a:before {
   }
   /* -------------section_4_5區 (bg_fix)----------- */
   .zone_4_5 {
-    height: 350px;
+    height: 300px;
     background-image: url(../images/bg/bg_4_5_sp.jpg);
-    background-position: center top;
-    background-attachment: scroll;
   }
   /* -------------footer_bottom----------- */
   #footer_bottom {
