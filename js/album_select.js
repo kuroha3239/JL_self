@@ -66,11 +66,6 @@ album_select =
     </a>\
     </div>\
     <div class="fall">\
-        <a href="images/album/b/fall - (2).jpg" data-caption="東京 - 目白庭院">\
-            <img src="images/album/fall - (2).jpg" alt="東京 - 目白庭院">\
-        </a>\
-    </div>\
-    <div class="fall">\
     <a href="images/album/b/fall - (5).jpg" data-caption="東京ミッドタウン">\
     <img src="images/album/fall - (5).jpg" alt="東京ミッドタウン">\
     </a>\
