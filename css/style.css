@@ -1241,6 +1241,7 @@ nav > ul > li > a:before {
   width: 95%;
   margin: 1% auto 1%;
   display: flex;
+  align-items: center;
 }
 
 .skill_content {
@@ -1250,7 +1251,7 @@ nav > ul > li > a:before {
 
 .skill_content p {
   color: #fff;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   line-height: 1.8rem;
   text-align: left;
   padding: 0% 6%;
@@ -1267,7 +1268,7 @@ nav > ul > li > a:before {
 .bar-chart {
   background: #323232;
   position: relative;
-  height: 1.3rem;
+  height: 1.15rem;
   margin-bottom: 1.3rem;
   border-radius: 5px;
 }
@@ -1318,13 +1319,18 @@ nav > ul > li > a:before {
 }
 
 .bar-chart:nth-child(4) .bar-chart--inner {
-  background: #3dab67;
+  background: #fc5252;
 }
+
 .bar-chart:nth-child(5) .bar-chart--inner {
-  background: #09a9c5;
+  background: #3dab67;
 }
 
 .bar-chart:nth-child(6) .bar-chart--inner {
+  background: #09a9c5;
+}
+
+.bar-chart:nth-child(7) .bar-chart--inner {
   background: #f76f30;
 }
 
