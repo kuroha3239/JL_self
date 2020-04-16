@@ -1254,7 +1254,7 @@ nav > ul > li > a:before {
   letter-spacing: 0.2rem;
   line-height: 1.8rem;
   text-align: left;
-  padding: 0% 6%;
+  padding: 0% 10%;
 }
 
 .skill_chart {
@@ -1566,6 +1566,9 @@ nav > ul > li > a:before {
     display: block;
     margin: 7% auto 12%;
     height: 500px;
+  }
+  .skill_content p {
+    padding: 0% 6%;
   }
   #tk {
     line-height: 530px;
