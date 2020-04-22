@@ -17,7 +17,7 @@ $(function () {
   var window_width = $(window).width();
 
   if (window_width > 1281) {
-    $.preload('images/bg/top_bgc_pc.jpg');
+    $.preload('src/assets/images/bg/top_bgc_pc.jpg');
 
     // ------------------- AOS 調整-------------------//
 
@@ -60,13 +60,13 @@ $(function () {
       $(this)
         .css('background', '#174887')
         .find('img')
-        .attr('src', 'images/logo/jl_logo_w.png');
+        .attr('src', 'src/assets/images/logo/jl_logo_w.png');
     },
     function () {
       $(this)
         .css('background', 'transparent')
         .find('img')
-        .attr('src', 'images/logo/jl_logo.png');
+        .attr('src', 'src/assets/images/logo/jl_logo.png');
     }
   );
   $('nav ul li')
@@ -104,7 +104,7 @@ $(function () {
       $('#logo').css('background', '#174887');
       $('nav li:eq(0)')
         .find('img')
-        .attr('src', 'images/logo/jl_logo_w.png');
+        .attr('src', 'src/assets/images/logo/jl_logo_w.png');
       $('nav li:eq(0)')
         .siblings()
         .removeClass('nav_act');
@@ -112,7 +112,7 @@ $(function () {
       $('#logo').css('background', 'transparent');
       $('nav li:eq(0)')
         .find('img')
-        .attr('src', 'images/logo/jl_logo.png');
+        .attr('src', 'src/assets/images/logo/jl_logo.png');
     }
     // if ($(window).scrollTop() > zone_0) {
     if (scroll_act > zone_1) {
@@ -326,7 +326,7 @@ $(function () {
     }
 
     // ------------------- 預載IMG-------------------//
-    $.preload('images/bg/top_bgc_pad.jpg');
+    $.preload('src/assets/images/bg/top_bgc_pad.jpg');
 
     // ------------------- AOS 調整-------------------//
 
@@ -354,7 +354,7 @@ $(function () {
   /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PHONE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   if (window_width <= 767) {
     // ------------------- 預載IMG-------------------//
-    $.preload('images/bg/top_bgc_sp.jpg');
+    $.preload('src/assets/images/bg/top_bgc_sp.jpg');
 
     // -------------------graphic hover 拿掉blur-------------------//
     $('.inframe').hover(
