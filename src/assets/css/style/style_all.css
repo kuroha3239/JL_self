@@ -1515,26 +1515,22 @@ nav > ul > li > a::before {
 }
 
 .bar-chart:nth-child(3) .bar-chart--inner {
-  background: #ff49ad;
-}
-
-.bar-chart:nth-child(4) .bar-chart--inner {
   background: #e6c408;
 }
 
-.bar-chart:nth-child(5) .bar-chart--inner {
+.bar-chart:nth-child(4) .bar-chart--inner {
   background: #fc5252;
 }
 
-.bar-chart:nth-child(6) .bar-chart--inner {
+.bar-chart:nth-child(5) .bar-chart--inner {
   background: #3dab67;
 }
 
-.bar-chart:nth-child(7) .bar-chart--inner {
+.bar-chart:nth-child(6) .bar-chart--inner {
   background: #09a9c5;
 }
 
-.bar-chart:nth-child(8) .bar-chart--inner {
+.bar-chart:nth-child(7) .bar-chart--inner {
   background: #f76f30;
 }
 
